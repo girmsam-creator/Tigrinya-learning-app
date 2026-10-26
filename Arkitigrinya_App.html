@@ -1,0 +1,273 @@
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Arkitigrinya</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Serif+Ethiopic:wght@500;700&display=swap">
+<style>
+/* Layout: one column phone app. Header on top, single working area, fixed bottom tab bar.
+   Ge'ez text always uses the ochre token so Tigrinya stays visually separate from Finnish. */
+:root{
+  --bg:#eef2f1; --surface:#ffffff; --surface-2:#e1e9e7; --ink:#1b2a29; --dim:#5b6e6c;
+  --accent:#0f6b66; --accent-ink:#ffffff; --ochre:#a35a00; --good:#1f7a3d; --bad:#b3261e; --line:#c9d6d3;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#101716; --surface:#18221f; --surface-2:#223330; --ink:#e8f0ee; --dim:#9fb3b0;
+    --accent:#4fc1b8; --accent-ink:#0b1f1d; --ochre:#f0a24a; --good:#6fd08c; --bad:#ff8a80; --line:#2f4541;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#101716; --surface:#18221f; --surface-2:#223330; --ink:#e8f0ee; --dim:#9fb3b0;
+  --accent:#4fc1b8; --accent-ink:#0b1f1d; --ochre:#f0a24a; --good:#6fd08c; --bad:#ff8a80; --line:#2f4541;
+  color-scheme:dark;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:16px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:12px 96px}
+h1,h2{font-family:Fraunces,Georgia,serif;margin:0;text-wrap:balance}
+header{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:10px}
+header h1{font-size:1.5rem}
+header .stat{font-size:.8rem;color:var(--dim)}
+.geez{font-family:"Noto Serif Ethiopic",serif;color:var(--ochre);font-weight:700}
+.ph{color:var(--ochre);font-style:italic}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px;margin:10px 0;min-width:0}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:8px 0}
+select,button{font:inherit;color:var(--ink)}
+select{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px;min-height:44px;max-width:100%;flex:1;min-width:0}
+.btn{background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:12px 16px;min-height:48px;cursor:pointer;font-weight:600;flex:1}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.btn.good{border-color:var(--good);color:var(--good)}
+.btn.bad{border-color:var(--bad);color:var(--bad)}
+.btn:focus-visible,select:focus-visible,.tab:focus-visible,.tile:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.seg{display:flex;border:1px solid var(--line);border-radius:12px;overflow:hidden;width:100%}
+.seg button{flex:1;background:var(--surface);border:0;padding:10px;min-height:44px;font-weight:600;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.card{min-height:200px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:10px;cursor:pointer;padding:12px;border-radius:16px;background:var(--surface-2);border:1px dashed var(--line)}
+.card .big{font-size:2rem;line-height:1.2;overflow-wrap:anywhere}
+.card .hint{font-size:.8rem;color:var(--dim)}
+.opts{display:grid;gap:8px;margin-top:12px}
+.opt{background:var(--surface);border:1.5px solid var(--line);border-radius:12px;padding:14px;min-height:52px;text-align:left;cursor:pointer;font-size:1rem}
+.opt.right{border-color:var(--good);background:color-mix(in srgb,var(--good) 14%,var(--surface))}
+.opt.wrong{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 14%,var(--surface))}
+.bar{height:8px;background:var(--surface-2);border-radius:99px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent);width:0}
+.tiles{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.tile{background:var(--surface);border:1.5px solid var(--line);border-radius:10px;padding:10px 12px;min-height:44px;font-weight:600;cursor:pointer;color:var(--ochre);font-style:italic}
+.answer{min-height:64px;border:2px dashed var(--line);border-radius:12px;padding:8px;display:flex;flex-wrap:wrap;gap:8px;align-items:flex-start}
+.msg{font-weight:600;margin:8px 0}
+.msg.good{color:var(--good)} .msg.bad{color:var(--bad)}
+.qa{border-top:1px solid var(--line);padding:10px 0}
+.qa button{width:100%;text-align:left;background:none;border:0;padding:0;font-weight:600;cursor:pointer}
+.qa .a{margin-top:4px;color:var(--good);font-weight:600}
+.fid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px;margin:8px 0}
+.fid div{background:var(--surface);border:1px solid var(--line);border-radius:8px;text-align:center;padding:6px 0;min-width:0}
+.fid .g{font-family:"Noto Serif Ethiopic",serif;font-size:1.4rem;color:var(--ochre);font-weight:700;line-height:1.3}
+.fid .p{font-size:.68rem;color:var(--dim)}
+nav{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--surface);border-top:1px solid var(--line);display:flex;
+  padding:6px max(6px,env(safe-area-inset-right,0px)) calc(6px + env(safe-area-inset-bottom,0px)) max(6px,env(safe-area-inset-left,0px))}
+.tab{flex:1;background:none;border:0;padding:8px 2px;min-height:48px;font-size:.72rem;font-weight:600;color:var(--dim);cursor:pointer;border-radius:10px;min-width:0}
+.tab[aria-selected="true"]{color:var(--accent);background:var(--surface-2)}
+.tab b{font-family:"Noto Serif Ethiopic","IBM Plex Sans",sans-serif;display:block;font-size:1.15rem;font-weight:700;line-height:1.2}
+.small{font-size:.82rem;color:var(--dim)}
+@media (prefers-reduced-motion:no-preference){.bar i{transition:width .25s}}
+</style>
+
+<header><h1>Arkitigrinya</h1><span class="stat" id="stat"></span></header>
+<main id="main" aria-live="polite"></main>
+<nav id="nav" role="tablist" aria-label="Harjoitukset"></nav>
+
+<script>
+const D = {"decks":[{"id":"questions","label":"Kysymyssanat","group":"Handout 1: esittely","cards":[{"ph":"Men","tg":"መን","fi":"kuka"},{"ph":"Kemey","tg":"ከመይ","fi":"miten"},{"ph":"Entay","tg":"እንታይ","fi":"mikä, mitä"},{"ph":"Kindey","tg":"ክንደይ","fi":"kuinka monta, paljonko"},{"ph":"Me'as","tg":"መዓስ","fi":"milloin"},{"ph":"Abey","tg":"ኣበይ","fi":"missä"},{"ph":"Slemintay / Nmintay","tg":"ስለምንታይ","fi":"miksi"}]},{"id":"family","label":"Perhe","group":"Handout 1: esittely","cards":[{"ph":"Sdray","tg":"ስድራይ","fi":"perheeni"},{"ph":"Adey","tg":"ኣደይ","fi":"äitini"},{"ph":"Aboy","tg":"ኣቦይ","fi":"isäni"},{"ph":"Haftey","tg":"ሓፍተይ","fi":"siskoni"},{"ph":"Hawey","tg":"ሓወይ","fi":"veljeni"},{"ph":"Azmadey / Zemedey","tg":"ኣዝማደይ","fi":"sukulaiseni"},{"ph":"Aba-yay / Adde abay","tg":"ዓባየይ","fi":"isoäitini"},{"ph":"Aba-hagoy","tg":"ኣባሓጎይ","fi":"isoisäni"},{"ph":"Amoy","tg":"ኣሞይ","fi":"isän sisko (täti)"},{"ph":"Ha-ti-ney","tg":"ሓትነይ","fi":"äidin sisko (täti)"},{"ph":"How-e-boy","tg":"ሓወቦይ","fi":"isän veli (setä)"},{"ph":"Akoy / AiAi","tg":"ኣኮይ","fi":"äidin veli (eno)"},{"ph":"Wedey","tg":"ወደይ","fi":"poikani"},{"ph":"Gualey","tg":"ጓለይ","fi":"tyttäreni"},{"ph":"Sebeytey / Bealti Betey","tg":"ሰበይተይ","fi":"vaimoni"},{"ph":"Sebayey / Beal Betey","tg":"ሰብኣየይ","fi":"mieheni"}]},{"id":"people","label":"Ihmiset ja kotona","group":"Handout 1: esittely","cards":[{"ph":"Abo","tg":"","fi":"isä"},{"ph":"Ade","tg":"","fi":"äiti"},{"ph":"Hawi","tg":"","fi":"veli"},{"ph":"Hafti","tg":"","fi":"sisko"},{"ph":"Go-re-bet","tg":"","fi":"naapuri"},{"ph":"Arki","tg":"","fi":"ystävä (mies)"},{"ph":"Maha'za","tg":"","fi":"ystävä (nainen)"},{"ph":"Zemed","tg":"","fi":"serkut"},{"ph":"Geza","tg":"","fi":"koti"},{"ph":"Hezitey","tg":"","fi":"morsian, kihlattu"},{"ph":"Nay adey abo","tg":"","fi":"äitini isä"},{"ph":"Abi","tg":"","fi":"iso"},{"ph":"Ni-e-sh-tay","tg":"","fi":"pieni"},{"ph":"Seb","tg":"","fi":"henkilö"},{"ph":"Seb'ay","tg":"","fi":"mies"},{"ph":"Sebey'ti","tg":"","fi":"nainen"},{"ph":"Wedi","tg":"","fi":"poika"},{"ph":"Gu'al","tg":"","fi":"tyttö"}]},{"id":"numbers","label":"Numerot","group":"Handout 1: esittely","cards":[{"ph":"Bado","tg":"","fi":"0"},{"ph":"Hade","tg":"","fi":"1"},{"ph":"Kil-te","tg":"","fi":"2"},{"ph":"Seleste","tg":"","fi":"3"},{"ph":"Arbate","tg":"","fi":"4"},{"ph":"Hamushte","tg":"","fi":"5"},{"ph":"Shudushte","tg":"","fi":"6"},{"ph":"Shewate","tg":"","fi":"7"},{"ph":"Shemonte","tg":"","fi":"8"},{"ph":"Tisheate","tg":"","fi":"9"},{"ph":"Aserte","tg":"","fi":"10"},{"ph":"Aserte hade","tg":"","fi":"11"},{"ph":"Aserte kil-te","tg":"","fi":"12"},{"ph":"Aserte seleste","tg":"","fi":"13"},{"ph":"Eesra","tg":"","fi":"20"},{"ph":"Eesran haden","tg":"","fi":"21"},{"ph":"Selasa","tg":"","fi":"30"},{"ph":"Arba","tg":"","fi":"40"},{"ph":"Hamsa","tg":"","fi":"50"},{"ph":"Sussa","tg":"","fi":"60"},{"ph":"Seb'a","tg":"","fi":"70"},{"ph":"Semanya","tg":"","fi":"80"},{"ph":"Tes'a","tg":"","fi":"90"},{"ph":"Mee'-tee","tg":"","fi":"100"},{"ph":"Kilete mee'-tee","tg":"","fi":"200"},{"ph":"Shi'h'","tg":"","fi":"1000"}]},{"id":"ordinals","label":"Järjestysluvut","group":"Handout 1: esittely","cards":[{"ph":"Qedamay","tg":"","fi":"ensimmäinen"},{"ph":"Kal'ay","tg":"","fi":"toinen"},{"ph":"Salsay","tg":"","fi":"kolmas"},{"ph":"Ra'bay","tg":"","fi":"neljäs"},{"ph":"Hamshay","tg":"","fi":"viides"},{"ph":"Sadshay","tg":"","fi":"kuudes"},{"ph":"Shabay","tg":"","fi":"seitsemäs"},{"ph":"Sham'nay","tg":"","fi":"kahdeksas"},{"ph":"Tasaiy","tg":"","fi":"yhdeksäs"},{"ph":"Asray","tg":"","fi":"kymmenes"}]},{"id":"pronouns","label":"Pronominit","group":"Handout 1: esittely","cards":[{"ph":"Ana","tg":"","fi":"minä"},{"ph":"Nessexa","tg":"","fi":"sinä (mies)"},{"ph":"Nessexi","tg":"","fi":"sinä (nainen)"},{"ph":"Nessu","tg":"","fi":"hän (mies)"},{"ph":"Nessa","tg":"","fi":"hän (nainen)"},{"ph":"Nehna","tg":"","fi":"me"},{"ph":"Nessexatum","tg":"","fi":"te (miehet)"},{"ph":"Nessexaten","tg":"","fi":"te (naiset)"},{"ph":"Nessatom","tg":"","fi":"he (miehet)"},{"ph":"Nessatan","tg":"","fi":"he (naiset)"}]},{"id":"tobe","label":"'Olla'-muodot","group":"Handout 1: esittely","cards":[{"ph":"Alekhu","tg":"","fi":"minä olen"},{"ph":"Alekha","tg":"","fi":"sinä olet (mies)"},{"ph":"Alekhi","tg":"","fi":"sinä olet (nainen)"},{"ph":"Alo","tg":"","fi":"hän on (mies)"},{"ph":"Ala","tg":"","fi":"hän on (nainen)"},{"ph":"Alona","tg":"","fi":"me olemme"},{"ph":"Alokhum","tg":"","fi":"te olette (miehet)"},{"ph":"Alekhin","tg":"","fi":"te olette (naiset)"},{"ph":"Alewi","tg":"","fi":"he ovat (miehet)"},{"ph":"Alewa","tg":"","fi":"he ovat (naiset)"}]},{"id":"tired","label":"Dekim- (väsynyt)","group":"Handout 1: esittely","cards":[{"ph":"dekim-e","tg":"","fi":"olen väsynyt"},{"ph":"dekim-ka","tg":"","fi":"olet väsynyt (mies)"},{"ph":"dekim-ki","tg":"","fi":"olet väsynyt (nainen)"},{"ph":"dekim-u","tg":"","fi":"hän on väsynyt (mies)"},{"ph":"dekim-a","tg":"","fi":"hän on väsynyt (nainen)"},{"ph":"dekim-na","tg":"","fi":"olemme väsyneitä"},{"ph":"dekim-kum","tg":"","fi":"olette väsyneitä (miehet)"},{"ph":"dekim-om","tg":"","fi":"he ovat väsyneitä (miehet)"}]},{"id":"eat","label":"Beli- (syödä)","group":"Handout 1: esittely","cards":[{"ph":"beli-e","tg":"","fi":"minä (syön)"},{"ph":"beli-ka","tg":"","fi":"sinä, mies (syöt)"},{"ph":"beli-ki","tg":"","fi":"sinä, nainen (syöt)"},{"ph":"beli-u","tg":"","fi":"hän, mies (syö)"},{"ph":"beli-a","tg":"","fi":"hän, nainen (syö)"},{"ph":"beli-na","tg":"","fi":"me (syömme)"},{"ph":"beli-kum","tg":"","fi":"te, miehet (syötte)"},{"ph":"beli-om","tg":"","fi":"he, miehet (syövät)"}]},{"id":"kitchen","label":"Keittiö","group":"Handout 2: keittiö ja ruoka","cards":[{"ph":"Kshine","tg":"","fi":"keittiö"},{"ph":"Manka","tg":"","fi":"lusikka"},{"ph":"Farketa","tg":"","fi":"haarukka"},{"ph":"Byati / Shahani","tg":"","fi":"lautanen"},{"ph":"Kubaya","tg":"","fi":"kuppi"},{"ph":"Kara","tg":"","fi":"veitsi"},{"ph":"Berad","tg":"","fi":"teekannu"},{"ph":"Dsti","tg":"","fi":"kattila"},{"ph":"Forno","tg":"","fi":"uuni"},{"ph":"Badela","tg":"","fi":"paistinpannu"},{"ph":"Mesob","tg":"","fi":"injera-kori"}]},{"id":"food","label":"Ruoka ja juoma","group":"Handout 2: keittiö ja ruoka","cards":[{"ph":"Qursee","tg":"","fi":"aamiainen"},{"ph":"Misah","tg":"","fi":"lounas"},{"ph":"Derar","tg":"","fi":"illallinen"},{"ph":"Bani","tg":"","fi":"leipä"},{"ph":"Sga Beggi","tg":"","fi":"naudanliha"},{"ph":"Formajo","tg":"","fi":"juusto"},{"ph":"Derho","tg":"","fi":"kana"},{"ph":"Assa","tg":"","fi":"kala"},{"ph":"Tesmi","tg":"","fi":"voi"},{"ph":"Berbere","tg":"","fi":"pippuri (berbere)"},{"ph":"Balengua","tg":"","fi":"pavut"},{"ph":"Hamlee","tg":"","fi":"vihannekset"},{"ph":"Shigurtee","tg":"","fi":"sipulit"},{"ph":"Dinish","tg":"","fi":"peruna"},{"ph":"Selatta","tg":"","fi":"salaatti"},{"ph":"Qemen","tg":"","fi":"mauste"},{"ph":"Boon","tg":"","fi":"kahvi"},{"ph":"Sha'hee","tg":"","fi":"tee"},{"ph":"Tseba","tg":"","fi":"maito"},{"ph":"Mai","tg":"","fi":"vesi"},{"ph":"Mai gaz","tg":"","fi":"kivennäisvesi"},{"ph":"Ko ka - Ko la","tg":"","fi":"Coca Cola"},{"ph":"Shikor","tg":"","fi":"sokeri"},{"ph":"Hanti biera","tg":"","fi":"yksi olut"}]},{"id":"taste","label":"Maku ja tila","group":"Handout 2: keittiö ja ruoka","cards":[{"ph":"Woo'uy","tg":"","fi":"kuuma"},{"ph":"Zehool","tg":"","fi":"kylmä"},{"ph":"Niquetsh / Nequs","tg":"","fi":"kuiva"},{"ph":"Tu'um","tg":"","fi":"herkullinen"},{"ph":"Haddish","tg":"","fi":"tuore, uusi"},{"ph":"Merir","tg":"","fi":"tulinen"},{"ph":"Muqur","tg":"","fi":"makea"},{"ph":"Bekka","tg":"","fi":"riittää"},{"ph":"Aitamenin","tg":"","fi":"mauton"},{"ph":"Tu'um aihonen","tg":"","fi":"ei ole herkullista"}]},{"id":"shuro","label":"Shuro-resepti","group":"Handout 2: keittiö ja ruoka","cards":[{"ph":"Komidere","tg":"","fi":"tomaatit"},{"ph":"Shigurti","tg":"","fi":"sipulit"},{"ph":"Mai","tg":"","fi":"vesi"},{"ph":"Shuro","tg":"","fi":"shuro-jauhe"},{"ph":"Guoe / Gueh","tg":"","fi":"jalapeño"},{"ph":"Zaytie","tg":"","fi":"öljy"},{"ph":"Chew","tg":"","fi":"suola"},{"ph":"Injera","tg":"","fi":"injera"},{"ph":"Miwesak","tg":"","fi":"lisätä"},{"ph":"Mikilaw","tg":"","fi":"paistaa"}]},{"id":"days","label":"Viikonpäivät","group":"Handout 3: aika","cards":[{"ph":"Se-nuy","tg":"ሰኑይ","fi":"maanantai"},{"ph":"Se-lus","tg":"ሰሉስ","fi":"tiistai"},{"ph":"Reb-o'h","tg":"ረቡዕ","fi":"keskiviikko"},{"ph":"Ha'moos","tg":"ሓሙስ","fi":"torstai"},{"ph":"Ah'rbee","tg":"ዓርቢ","fi":"perjantai"},{"ph":"Qe'dam","tg":"ቐዳም","fi":"lauantai"},{"ph":"Sen-bet","tg":"ሰንበት","fi":"sunnuntai"}]},{"id":"months","label":"Kuukaudet","group":"Handout 3: aika","cards":[{"ph":"T'ri","tg":"ጥሪ","fi":"tammikuu"},{"ph":"Leka'teet","tg":"ለካቲት","fi":"helmikuu"},{"ph":"Mega-beet","tg":"መጋቢት","fi":"maaliskuu"},{"ph":"Mee-yaz-ya","tg":"ሚያዝያ","fi":"huhtikuu"},{"ph":"Goon-bet","tg":"ጉንበት","fi":"toukokuu"},{"ph":"Seh-ne","tg":"ሰነ","fi":"kesäkuu"},{"ph":"Ha'm-lee","tg":"ሓምለ","fi":"heinäkuu"},{"ph":"Nehase","tg":"ነሓሰ","fi":"elokuu"},{"ph":"Mes-ke-rem","tg":"መስከረም","fi":"syyskuu"},{"ph":"T'k'mti","tg":"ጥቕምቲ","fi":"lokakuu"},{"ph":"H'dar","tg":"ሕዳር","fi":"marraskuu"},{"ph":"Tah'sas","tg":"ታሕሳስ","fi":"joulukuu"}]},{"id":"seasons","label":"Vuodenajat","group":"Handout 3: aika","cards":[{"ph":"Kremti","tg":"ክረምቲ","fi":"kesä (sadekausi, heinä-syyskuu)"},{"ph":"Hagay","tg":"ሓጋይ","fi":"talvi (kuivakausi, marras-maaliskuu)"},{"ph":"Tsedeya","tg":"ጽድያ","fi":"kevät (huhti-kesäkuu)"},{"ph":"Qew'e","tg":"ቀውዒ","fi":"syksy (syys-marraskuu)"}]},{"id":"timewords","label":"Aikasanat","group":"Handout 3: aika","cards":[{"ph":"Deqiq","tg":"ደቂቅ","fi":"minuutti"},{"ph":"Se'at","tg":"ሰዓት","fi":"tunti, kello"},{"ph":"Me'alti","tg":"መዓልቲ","fi":"päivä"},{"ph":"Semun","tg":"ሰሙን","fi":"viikko"},{"ph":"Werhi","tg":"ወርሒ","fi":"kuukausi"},{"ph":"Amet","tg":"ዓመት","fi":"vuosi"},{"ph":"Gize","tg":"ጊዜ","fi":"aika"}]},{"id":"dayref","label":"Tänään, eilen, huomenna","group":"Handout 3: aika","cards":[{"ph":"Lomi / Lomanti","tg":"ሎሚ","fi":"tänään"},{"ph":"T'mali","tg":"ትማሊ","fi":"eilen"},{"ph":"Ts'ba'h","tg":"ጽባሕ","fi":"huomenna"},{"ph":"Dh'ri Ts'ba'h","tg":"ድሕሪ ጽባሕ","fi":"ylihuomenna"},{"ph":"Qdmi T'mali","tg":"ቕድሚ ትማሊ","fi":"toissa päivänä"},{"ph":"Zimezed","tg":"","fi":"seuraava"}]},{"id":"timeofday","label":"Vuorokaudenajat","group":"Handout 3: aika","cards":[{"ph":"Nig'ho","tg":"ንግሆ","fi":"aamu"},{"ph":"Dhri Qetri","tg":"ድሕሪ ቀትሪ","fi":"iltapäivä"},{"ph":"Qetri / Fadus","tg":"ቀትሪ","fi":"keskipäivä"},{"ph":"M'shet","tg":"ምሸት","fi":"ilta"},{"ph":"Leyti","tg":"ለይቲ","fi":"yö"},{"ph":"Frki Leyti","tg":"ፍርቂ ለይቲ","fi":"keskiyö"}]},{"id":"clock","label":"Kellonajat","group":"Handout 3: aika","cards":[{"ph":"Seat shewate","tg":"","fi":"kello 7.00"},{"ph":"Seat shewate mis ribie","tg":"","fi":"kello 7.15"},{"ph":"Seat shewaten isra","tg":"","fi":"kello 7.20"},{"ph":"Seat shewate fikri","tg":"","fi":"kello 7.30"},{"ph":"Ribie godel n seat shemunte","tg":"","fi":"kello 7.45 (neljännes vaille 8)"},{"ph":"Aserte godel n seat shemunte","tg":"","fi":"kello 7.50 (kymmenen vaille 8)"}]},{"id":"phH1","label":"Lauseet","group":"Valmiit lauseet: Handout 1","cards":[{"ph":"Selam","tg":"","fi":"Hei"},{"ph":"Kemey aleki / aleka?","tg":"","fi":"Mitä kuuluu? (naiselle / miehelle)"},{"ph":"Ale-ku","tg":"","fi":"Voin (hyvin)"},{"ph":"Men shimki / shimka?","tg":"","fi":"Mikä sinun nimesi on?"},{"ph":"Simon y-behal.","tg":"","fi":"Nimeni on Simon."},{"ph":"Adeki / Adeka men shima?","tg":"","fi":"Mikä äitisi nimi on?"},{"ph":"Aboki / Aboka men shimu?","tg":"","fi":"Mikä isäsi nimi on?"},{"ph":"Abey tinebri / tinebir?","tg":"","fi":"Missä asut?"},{"ph":"Tisbuck leila.","tg":"","fi":"Hauska tavata."},{"ph":"Yekenqeley.","tg":"","fi":"Kiitos."},{"ph":"Klite ah'wat aloni.","tg":"","fi":"Minulla on kaksi veljeä."},{"ph":"Kindey eyu ametka?","tg":"","fi":"Kuinka vanha olet?"},{"ph":"Wedi aserte amet eye.","tg":"","fi":"Olen kymmenen vuotta vanha."},{"ph":"Me-ahs eyu elet ametki?","tg":"","fi":"Milloin syntymäpäiväsi on?"}]},{"id":"phH2","label":"Lauseet","group":"Valmiit lauseet: Handout 2","cards":[{"ph":"Manka habini.","tg":"","fi":"Anna minulle lusikka."},{"ph":"Abey alo eti byati?","tg":"","fi":"Missä lautanen on?"},{"ph":"Entai alo zibelah?","tg":"","fi":"Mitä on syötäväksi?"},{"ph":"Entai entai alo absi megbi?","tg":"","fi":"Mitä tässä ruoassa on?"},{"ph":"Kemey zerihu?","tg":"","fi":"Miltä se maistuu?"},{"ph":"Ab forno giberiyo / gibero.","tg":"","fi":"Laita se uuniin."},{"ph":"Tisbuck kshine.","tg":"","fi":"Mukava keittiö."},{"ph":"Ab kishine aloku.","tg":"","fi":"Olen keittiössä."},{"ph":"Shahi ab berad alo.","tg":"","fi":"Teekannussa on teetä."},{"ph":"Byati tesebiru.","tg":"","fi":"Lautanen on rikki."},{"ph":"Hadish badela gezie.","tg":"","fi":"Ostin uuden paistinpannun."},{"ph":"Hejy diu tezeriu?","tg":"","fi":"Onko tämä nyt valmis?"},{"ph":"Jeqatsel diu?","tg":"","fi":"Onko se kuumaa?"},{"ph":"Tigemen.","tg":"","fi":"Toista."},{"ph":"Waga kendei iu?","tg":"","fi":"Mitä se maksaa?"},{"ph":"Entai ilka?","tg":"","fi":"Mitä sanoit?"}]},{"id":"phH3","label":"Lauseet","group":"Valmiit lauseet: Handout 3","cards":[{"ph":"Seat k'ndey koynu?","tg":"","fi":"Mitä kello on?"},{"ph":"Seat hade koynu.","tg":"","fi":"Kello on yksi."},{"ph":"Seat k'ndey eki/eka timetsi'e?","tg":"","fi":"Mihin aikaan tulet?"},{"ph":"Seat hamuste k'metise eye.","tg":"","fi":"Tulen kello viisi."},{"ph":"Entay me'alti eyu lomi?","tg":"","fi":"Mikä päivä on tänään?"},{"ph":"Lomi hamus eyu.","tg":"","fi":"Tänään on torstai."},{"ph":"Entay werhi ena zelena?","tg":"","fi":"Missä kuussa olemme?"},{"ph":"Werhi tkimti.","tg":"","fi":"Kuu on lokakuu."},{"ph":"Ayenay werhi eyu ametki / ametka?","tg":"","fi":"Mikä kuukausi on syntymäpäiväsi?"},{"ph":"Werhi gunbet.","tg":"","fi":"Toukokuu."},{"ph":"Ab semun sho-ah-te me'alti alewa.","tg":"","fi":"Viikossa on seitsemän päivää."},{"ph":"Seat shewaten isra ane kehnibis jikheid.","tg":"","fi":"Menen uimaan kello 7.20."},{"ph":"Seat shewaten isra ane kegoyi jikheid.","tg":"","fi":"Menen juoksemaan kello 7.20."}]},{"id":"fidelwords","label":"Fidel-esimerkkisanat","group":"Handout 2-3: Fidel","cards":[{"ph":"Hager","tg":"ሃገር","fi":"maa"},{"ph":"Harur","tg":"ሃሩር","fi":"kuuma"},{"ph":"Lomi","tg":"ሎሚ","fi":"tänään"},{"ph":"Lemin","tg":"ለሚን","fi":"sitruuna"},{"ph":"Harmaz","tg":"ሓርማዝ","fi":"norsu"},{"ph":"Hagos","tg":"ሓጐስ","fi":"ilo"},{"ph":"Mekina","tg":"መኪና","fi":"auto"},{"ph":"Msah","tg":"ምሳሕ","fi":"lounas"},{"ph":"Rebuh","tg":"ረቡዕ","fi":"keskiviikko"},{"ph":"Rgibit","tg":"ርጊቢት","fi":"lintu"},{"ph":"Se'at","tg":"ሰዓት","fi":"kello"},{"ph":"Selus","tg":"ሰሉስ","fi":"tiistai"},{"ph":"Su'sa","tg":"ሱሳ","fi":"kuusikymmentä"},{"ph":"Shebeth","tg":"ሸበጥ","fi":"sandaali"},{"ph":"Shahi","tg":"ሻሂ","fi":"tee"},{"ph":"Shiro","tg":"ሽሮ","fi":"shiro"},{"ph":"Qe'telia","tg":"ቀጠልያ","fi":"vihreä"},{"ph":"Qol'a","tg":"ቆልዓ","fi":"lapsi"},{"ph":"Qe'lem","tg":"ቀለም","fi":"maali"},{"ph":"Be'les","tg":"በለስ","fi":"kaktus"},{"ph":"Be'gie","tg":"በጊዕ","fi":"lammas"},{"ph":"Babur","tg":"ባቡር","fi":"juna"},{"ph":"Temen","tg":"ተመን","fi":"käärme"},{"ph":"Tarik","tg":"ታሪኽ","fi":"historia"},{"ph":"Torta","tg":"ቶርታ","fi":"kakku"},{"ph":"Chow","tg":"ቻው","fi":"hei hei"},{"ph":"Chchero","tg":"ችቸሮ","fi":"stadion"},{"ph":"Chayna","tg":"ቻይና","fi":"Kiina"}]}],"sentences":[{"ph":"Selam","fi":"Hei","src":"H1"},{"ph":"Ale-ku","fi":"Voin (hyvin)","src":"H1"},{"ph":"Simon y-behal.","fi":"Nimeni on Simon.","src":"H1"},{"ph":"Tisbuck leila.","fi":"Hauska tavata.","src":"H1"},{"ph":"Yekenqeley.","fi":"Kiitos.","src":"H1"},{"ph":"Klite ah'wat aloni.","fi":"Minulla on kaksi veljeä.","src":"H1"},{"ph":"Kindey eyu ametka?","fi":"Kuinka vanha olet?","src":"H1"},{"ph":"Wedi aserte amet eye.","fi":"Olen kymmenen vuotta vanha.","src":"H1"},{"ph":"Me-ahs eyu elet ametki?","fi":"Milloin syntymäpäiväsi on?","src":"H1"},{"ph":"Manka habini.","fi":"Anna minulle lusikka.","src":"H2"},{"ph":"Abey alo eti byati?","fi":"Missä lautanen on?","src":"H2"},{"ph":"Entai alo zibelah?","fi":"Mitä on syötäväksi?","src":"H2"},{"ph":"Entai entai alo absi megbi?","fi":"Mitä tässä ruoassa on?","src":"H2"},{"ph":"Kemey zerihu?","fi":"Miltä se maistuu?","src":"H2"},{"ph":"Tisbuck kshine.","fi":"Mukava keittiö.","src":"H2"},{"ph":"Ab kishine aloku.","fi":"Olen keittiössä.","src":"H2"},{"ph":"Shahi ab berad alo.","fi":"Teekannussa on teetä.","src":"H2"},{"ph":"Byati tesebiru.","fi":"Lautanen on rikki.","src":"H2"},{"ph":"Hadish badela gezie.","fi":"Ostin uuden paistinpannun.","src":"H2"},{"ph":"Hejy diu tezeriu?","fi":"Onko tämä nyt valmis?","src":"H2"},{"ph":"Jeqatsel diu?","fi":"Onko se kuumaa?","src":"H2"},{"ph":"Tigemen.","fi":"Toista.","src":"H2"},{"ph":"Waga kendei iu?","fi":"Mitä se maksaa?","src":"H2"},{"ph":"Entai ilka?","fi":"Mitä sanoit?","src":"H2"},{"ph":"Seat k'ndey koynu?","fi":"Mitä kello on?","src":"H3"},{"ph":"Seat hade koynu.","fi":"Kello on yksi.","src":"H3"},{"ph":"Seat hamuste k'metise eye.","fi":"Tulen kello viisi.","src":"H3"},{"ph":"Entay me'alti eyu lomi?","fi":"Mikä päivä on tänään?","src":"H3"},{"ph":"Lomi hamus eyu.","fi":"Tänään on torstai.","src":"H3"},{"ph":"Entay werhi ena zelena?","fi":"Missä kuussa olemme?","src":"H3"},{"ph":"Werhi tkimti.","fi":"Kuu on lokakuu.","src":"H3"},{"ph":"Werhi gunbet.","fi":"Toukokuu.","src":"H3"},{"ph":"Ab semun sho-ah-te me'alti alewa.","fi":"Viikossa on seitsemän päivää.","src":"H3"},{"ph":"Seat shewaten isra ane kehnibis jikheid.","fi":"Menen uimaan kello 7.20.","src":"H3"},{"ph":"Seat shewaten isra ane kegoyi jikheid.","fi":"Menen juoksemaan kello 7.20.","src":"H3"},{"ph":"Farketa habini.","fi":"Anna minulle haarukka.","src":"H1-3"},{"ph":"Kubaya habini.","fi":"Anna minulle kuppi.","src":"H1-3"},{"ph":"Kara habini.","fi":"Anna minulle veitsi.","src":"H1-3"},{"ph":"Mai habini.","fi":"Anna minulle vesi.","src":"H1-3"},{"ph":"Boon habini.","fi":"Anna minulle kahvi.","src":"H1-3"},{"ph":"Sha'hee habini.","fi":"Anna minulle tee.","src":"H1-3"},{"ph":"Bani habini.","fi":"Anna minulle leipä.","src":"H1-3"},{"ph":"Tseba habini.","fi":"Anna minulle maito.","src":"H1-3"},{"ph":"Abey alo eti manka?","fi":"Missä lusikka on?","src":"H1-3"},{"ph":"Abey alo eti farketa?","fi":"Missä haarukka on?","src":"H1-3"},{"ph":"Abey alo eti kubaya?","fi":"Missä kuppi on?","src":"H1-3"},{"ph":"Abey alo eti berad?","fi":"Missä teekannu on?","src":"H1-3"},{"ph":"Abey alo eti dsti?","fi":"Missä kattila on?","src":"H1-3"},{"ph":"Abey alo eti badela?","fi":"Missä paistinpannu on?","src":"H1-3"},{"ph":"Abey alo eti mesob?","fi":"Missä injera-kori on?","src":"H1-3"},{"ph":"Kubaya tesebiru.","fi":"Kuppi on rikki.","src":"H1-3"},{"ph":"Berad tesebiru.","fi":"Teekannu on rikki.","src":"H1-3"},{"ph":"Manka tesebiru.","fi":"Lusikka on rikki.","src":"H1-3"},{"ph":"Dsti tesebiru.","fi":"Kattila on rikki.","src":"H1-3"},{"ph":"Mesob tesebiru.","fi":"Injera-kori on rikki.","src":"H1-3"},{"ph":"Hadish manka gezie.","fi":"Ostin uuden lusikan.","src":"H1-3"},{"ph":"Hadish kubaya gezie.","fi":"Ostin uuden kupin.","src":"H1-3"},{"ph":"Hadish dsti gezie.","fi":"Ostin uuden kattilan.","src":"H1-3"},{"ph":"Hadish berad gezie.","fi":"Ostin uuden teekannun.","src":"H1-3"},{"ph":"Hadish kara gezie.","fi":"Ostin uuden veitsen.","src":"H1-3"},{"ph":"Lomi Se-nuy eyu.","fi":"Tänään on maanantai.","src":"H1-3"},{"ph":"Lomi Se-lus eyu.","fi":"Tänään on tiistai.","src":"H1-3"},{"ph":"Lomi Reb-o'h eyu.","fi":"Tänään on keskiviikko.","src":"H1-3"},{"ph":"Lomi Ah'rbee eyu.","fi":"Tänään on perjantai.","src":"H1-3"},{"ph":"Lomi Qe'dam eyu.","fi":"Tänään on lauantai.","src":"H1-3"},{"ph":"Lomi Sen-bet eyu.","fi":"Tänään on sunnuntai.","src":"H1-3"},{"ph":"Ts'ba'h Se-nuy eyu.","fi":"Huomenna on maanantai.","src":"H1-3"},{"ph":"Ts'ba'h Reb-o'h eyu.","fi":"Huomenna on keskiviikko.","src":"H1-3"},{"ph":"Ts'ba'h Ha'moos eyu.","fi":"Huomenna on torstai.","src":"H1-3"},{"ph":"Ts'ba'h Sen-bet eyu.","fi":"Huomenna on sunnuntai.","src":"H1-3"},{"ph":"Werhi T'ri.","fi":"Kuukausi on tammikuu.","src":"H1-3"},{"ph":"Werhi Mega-beet.","fi":"Kuukausi on maaliskuu.","src":"H1-3"},{"ph":"Werhi Seh-ne.","fi":"Kuukausi on kesäkuu.","src":"H1-3"},{"ph":"Werhi Nehase.","fi":"Kuukausi on elokuu.","src":"H1-3"},{"ph":"Werhi Mes-ke-rem.","fi":"Kuukausi on syyskuu.","src":"H1-3"},{"ph":"Werhi H'dar.","fi":"Kuukausi on marraskuu.","src":"H1-3"},{"ph":"Werhi Tah'sas.","fi":"Kuukausi on joulukuu.","src":"H1-3"},{"ph":"Seat Kil-te koynu.","fi":"Kello on kaksi.","src":"H1-3"},{"ph":"Seat Seleste koynu.","fi":"Kello on kolme.","src":"H1-3"},{"ph":"Seat Arbate koynu.","fi":"Kello on neljä.","src":"H1-3"},{"ph":"Seat Hamushte koynu.","fi":"Kello on viisi.","src":"H1-3"},{"ph":"Seat Shudushte koynu.","fi":"Kello on kuusi.","src":"H1-3"},{"ph":"Seat Aserte koynu.","fi":"Kello on kymmenen.","src":"H1-3"},{"ph":"Ab Helsinki y-nebir.","fi":"Asun paikassa Helsinki.","src":"H1-3"},{"ph":"Ab Espoo y-nebir.","fi":"Asun paikassa Espoo.","src":"H1-3"},{"ph":"Ab Asmara y-nebir.","fi":"Asun paikassa Asmara.","src":"H1-3"},{"ph":"Ab Geza y-nebir.","fi":"Asun paikassa kotona.","src":"H1-3"},{"ph":"Simon y-behal.","fi":"Nimeni on Simon.","src":"H1-3"},{"ph":"Biniam y-behal.","fi":"Nimeni on Biniam.","src":"H1-3"},{"ph":"Samuel y-behal.","fi":"Nimeni on Samuel.","src":"H1-3"},{"ph":"Adey Maria t-behal.","fi":"Äitini nimi on Maria.","src":"H1-3"},{"ph":"Adey Selam t-behal.","fi":"Äitini nimi on Selam.","src":"H1-3"},{"ph":"Adey ab geza ala.","fi":"Äitini on kotona.","src":"H1-3"},{"ph":"Aboy ab geza alo.","fi":"Isäni on kotona.","src":"H1-3"},{"ph":"Hawey ab geza alo.","fi":"Veljeni on kotona.","src":"H1-3"},{"ph":"Haftey ab geza ala.","fi":"Siskoni on kotona.","src":"H1-3"},{"ph":"Adey ab kishine ala.","fi":"Äitini on keittiössä.","src":"H1-3"},{"ph":"Aboy ab kishine alo.","fi":"Isäni on keittiössä.","src":"H1-3"}],"reading":[{"title":"Esittely","ph":"Selam. Simon y-behal. Ab Helsinki y-nebir. Adey Maria t-behal. Aboy Daniel y-behal. Klite ah'wat aloni.","qs":[["Mikä kertojan nimi on?","Simon."],["Missä hän asuu?","Helsingissä."],["Mikä äidin nimi on?","Maria."],["Mikä isän nimi on?","Daniel."],["Montako veljeä hänellä on?","Kaksi."]]},{"title":"Päivä ja paikka","ph":"Lomi hamus eyu. Seat hamuste koynu. Ab kishine aloku. Shahi ab berad alo.","qs":[["Mikä päivä on tänään?","Torstai."],["Mikä kellonaika on?","Viisi (kello on viisi)."],["Missä kertoja on?","Keittiössä."],["Mitä teekannussa on?","Teetä."]]},{"title":"Syntymäpäivä","ph":"Selam; Biniam y-behal. Tisbuck leila. Wedi aserte amet eye. Zteweledkulu elet Gunbet aserte shduste eyu.","qs":[["Mikä kertojan nimi on?","Biniam."],["Kuinka vanha hän on?","Kymmenen."],["Milloin hänen syntymäpäivänsä on?","Toukokuun 16. päivä."]]},{"title":"Perhe kotona","ph":"Adey ab geza ala. Aboy ab geza alo. Haftey ab kishine ala. Hawey ab geza alo. Tisbuck geza.","qs":[["Missä äiti on?","Kotona."],["Missä isä on?","Kotona."],["Missä sisko on?","Keittiössä."],["Mitä kodista sanotaan?","Että se on mukava."]]},{"title":"Kellonajat","ph":"Seat shewate. Seat shewate mis ribie. Seat shewaten isra. Seat shewate fikri.","qs":[["Mitä neljä kellonaikaa mainitaan?","7.00, 7.15, 7.20 ja 7.30."],["Mikä niistä on kolmas?","7.20."]]},{"title":"Ateriat","ph":"Qursee: Bani, Tesmi, Boon. Misah: Shuro, Injera. Derar: Derho, Selatta, Mai.","qs":[["Mitä aamiaiseksi?","Leipää, voita, kahvia."],["Mitä lounaaksi?","Shuroa ja injeraa."],["Mitä illalliseksi?","Kanaa, salaattia, vettä."]]},{"title":"Resepti","ph":"Miwesak Shigurti ab disti. Shigurti mikilaw. Komidere miwesak. Berbere miwesak.","qs":[["Mitä lisätään ensin ja mihin?","Sipulit kattilaan."],["Mitä sipulille tehdään seuraavaksi?","Paistetaan."],["Mitä lisätään lopuksi?","Tomaatit ja berbere."]]},{"title":"Vuodenajat","ph":"Kremti: Ha'mlee, Nehase. Hagay: H'dar, Tah'sas. Tsedeya: Mee-yaz-ya.","qs":[["Missä vuodenajassa on heinäkuu?","Kremti (sadekausi)."],["Mitkä kaksi kuukautta on Hagay-kaudella?","Marraskuu ja joulukuu."],["Mikä kuukausi kuuluu kevääseen?","Huhtikuu."]]},{"title":"Päivän kulku","ph":"Lomi Nig'ho Qursee. Dhri Qetri Misah. M'shet Derar. Leyti Leyti.","qs":[["Mitä tehdään aamulla?","Syödään aamiainen."],["Mitä iltapäivällä?","Syödään lounas."],["Mitä illalla?","Syödään illallinen."]]},{"title":"Keittiössä","ph":"Byati tesebiru. Hadish byati gezie. Manka habini. Farketa habini. Waga kendei iu?","qs":[["Mikä on rikki?","Lautanen."],["Mitä ostettiin?","Uusi lautanen."],["Mitä kahta esinettä pyydetään?","Lusikka ja haarukka."],["Mitä lopuksi kysytään?","Hintaa."]]}],"listening":[{"title":"Tapaaminen","ph":"Selam. Biniam y-behal. Tisbuck leila.","qs":[["Mikä nimi mainittiin?","Biniam."],["Mitä lopuksi sanottiin?","Hauska tavata."]]},{"title":"Kuulumiset","ph":"Kemey aleka? Ale-ku. Yekenqeley.","qs":[["Mitä kysyttiin?","Mitä kuuluu."],["Mitä vastattiin?","Voin hyvin, kiitos."]]},{"title":"Lautanen","ph":"Abey alo eti byati? Ab kishine alo. Byati tesebiru.","qs":[["Mitä etsitään?","Lautasta."],["Missä se on?","Keittiössä."],["Mikä sen kunto on?","Rikki."]]},{"title":"Pyynnöt","ph":"Manka habini. Farketa habini. Kara habini.","qs":[["Mitkä kolme esinettä pyydetään?","Lusikka, haarukka, veitsi."]]},{"title":"Päivät","ph":"Lomi Qe'dam eyu. Ts'ba'h Sen-bet eyu.","qs":[["Mikä päivä on tänään?","Lauantai."],["Mikä päivä on huomenna?","Sunnuntai."]]},{"title":"Kello","ph":"Seat shewate fikri. Seat shewaten isra.","qs":[["Mitkä kaksi kellonaikaa kuulit?","7.30 ja 7.20."]]},{"title":"Numerot","ph":"Hade, Kil-te, Seleste, Arbate, Hamushte. Aserte hade, Aserte kil-te.","qs":[["Mitkä numerot kuulit?","1, 2, 3, 4, 5, sitten 11 ja 12."]]},{"title":"Perhe","ph":"Adey, Aboy, Haftey, Hawey, Wedey, Gualey.","qs":[["Mitkä perheenjäsenet kuulit?","Äiti, isä, sisko, veli, poika, tytär."]]},{"title":"Juomat","ph":"Boon, Sha'hee, Mai, Tseba.","qs":[["Mitkä juomat kuulit?","Kahvi, tee, vesi, maito."]]},{"title":"Kuukaudet","ph":"Werhi Goon-bet. Werhi Seh-ne. Werhi T'k'mti.","qs":[["Mitkä kolme kuukautta kuulit?","Toukokuu, kesäkuu, lokakuu."]]},{"title":"Ruokailu","ph":"Entai alo zibelah? Kemey zerihu? Tu'um. Jeqatsel diu? Woo'uy.","qs":[["Mitä kysyttiin ensin?","Mitä on syötäväksi."],["Mitä ruoasta sanottiin?","Se on herkullista."],["Onko se kuumaa?","Kyllä, kuumaa."]]},{"title":"Ikä ja syntymäpäivä","ph":"Kindey eyu ametka? Wedi aserte amet eye. Werhi gunbet.","qs":[["Mitä kysyttiin?","Ikää."],["Mikä on vastaus?","Kymmenen vuotta."],["Mikä kuukausi mainittiin?","Toukokuu."]]}],"fidel":[{"name":"He: ሀ","p":["He","Hu","Hi","Ha","Hie","H","Ho"],"g":["ሀ","ሁ","ሂ","ሃ","ሄ","ህ","ሆ"],"words":[["ሃገር","Hager","maa"],["ሃሩር","Harur","kuuma"]],"src":"H2"},{"name":"Le: ለ","p":["Le","Lu","Li","La","Lie","L","Lo"],"g":["ለ","ሉ","ሊ","ላ","ሌ","ል","ሎ"],"words":[["ሎሚ","Lomi","tänään"],["ለሚን","Lemin","sitruuna"]],"src":"H2"},{"name":"He (ሐ): ሐ","p":["He","Hu","Hi","Ha","Hie","H","Ho"],"g":["ሐ","ሑ","ሒ","ሓ","ሔ","ሕ","ሖ"],"words":[["ሓርማዝ","Harmaz","norsu"],["ሓጐስ","Hagos","ilo"]],"src":"H2"},{"name":"Me: መ","p":["Me","Mu","Mi","Ma","Mie","M","Mo"],"g":["መ","ሙ","ሚ","ማ","ሜ","ም","ሞ"],"words":[["መኪና","Mekina","auto"],["ምሳሕ","Msah","lounas"]],"src":"H2"},{"name":"Re: ረ","p":["Re","Ru","Ri","Ra","Rie","R","Ro"],"g":["ረ","ሩ","ሪ","ራ","ሬ","ር","ሮ"],"words":[["ረቡዕ","Rebuh","keskiviikko"],["ርጊቢት","Rgibit","lintu"]],"src":"H2"},{"name":"Se: ሰ","p":["Se","Su","Si","Sa","Sie","S","So"],"g":["ሰ","ሱ","ሲ","ሳ","ሴ","ስ","ሶ"],"words":[["ሰዓት","Se'at","kello"],["ሰሉስ","Selus","tiistai"],["ሱሳ","Su'sa","kuusikymmentä"]],"src":"H3"},{"name":"She: ሸ","p":["She","Shu","Shi","Sha","Shie","Sh","Sho"],"g":["ሸ","ሹ","ሺ","ሻ","ሼ","ሽ","ሾ"],"words":[["ሸበጥ","Shebeth","sandaali"],["ሻሂ","Shahi","tee"],["ሽሮ","Shiro","shiro"]],"src":"H3"},{"name":"Qe: ቀ","p":["Qe","Qu","Qi","Qa","Qie","Q","Qo"],"g":["ቀ","ቁ","ቂ","ቃ","ቄ","ቅ","ቆ"],"words":[["ቀጠልያ","Qe'telia","vihreä"],["ቆልዓ","Qol'a","lapsi"],["ቀለም","Qe'lem","maali"]],"src":"H3"},{"name":"Be: በ","p":["Be","Bu","Bi","Ba","Bie","B","Bo"],"g":["በ","ቡ","ቢ","ባ","ቤ","ብ","ቦ"],"words":[["በለስ","Be'les","kaktus"],["በጊዕ","Be'gie","lammas"],["ባቡር","Babur","juna"]],"src":"H3"},{"name":"Te: ተ","p":["Te","Tu","Ti","Ta","Tie","T","To"],"g":["ተ","ቱ","ቲ","ታ","ቴ","ት","ቶ"],"words":[["ተመን","Temen","käärme"],["ታሪኽ","Tarik","historia"],["ቶርታ","Torta","kakku"]],"src":"H3"},{"name":"Che: ቸ","p":["Che","Chu","Chi","Cha","Chie","Ch","Cho"],"g":["ቸ","ቹ","ቺ","ቻ","ቼ","ች","ቾ"],"words":[["ቻው","Chow","hei hei"],["ችቸሮ","Chchero","stadion"],["ቻይና","Chayna","Kiina"]],"src":"H3"}]};
+const TABS = [["cards","Kortit","◧"],["quiz","Visa","?"],["build","Lauseet","≡"],["read","Lue","▤"],["listen","Kuuntele","♪"],["fidel","Fidel","ሀ"]];
+const $ = (s,r=document)=>r.querySelector(s);
+const el = (h)=>{const t=document.createElement("template");t.innerHTML=h.trim();return t.content.firstChild};
+const rnd = (a)=>a[Math.floor(Math.random()*a.length)];
+const shuffle = (a)=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+let store = {};
+try{store = JSON.parse(localStorage.getItem("arkitigrinya")||"{}")}catch(e){}
+const save = ()=>{try{localStorage.setItem("arkitigrinya",JSON.stringify(store))}catch(e){}};
+store.box = store.box||{}; store.stats = store.stats||{q:0,ok:0};
+
+// ---- decks ----
+const DECKS = D.decks; // [{id,label,group,cards:[{ph,tg,fi}]}]
+const allCards = DECKS.flatMap(d=>d.cards);
+function deckOptions(sel){
+  const groups={};
+  DECKS.forEach(d=>{(groups[d.group]=groups[d.group]||[]).push(d)});
+  sel.innerHTML = '<option value="__all">Kaikki sanat</option>'+Object.keys(groups).map(g=>'<optgroup label="'+g+'">'+groups[g].map(d=>'<option value="'+d.id+'">'+d.label+' ('+d.cards.length+')</option>').join("")+'</optgroup>').join("");
+  if(store.deck) sel.value = store.deck;
+}
+const getDeck = (id)=> id==="__all"||!id ? allCards : (DECKS.find(d=>d.id===id)||{cards:allCards}).cards;
+const key = (c)=>c.ph+"|"+c.fi;
+function front(c){ return (c.tg?'<div class="big geez">'+c.tg+'</div>':'')+'<div class="big ph">'+c.ph+'</div>'; }
+function updateStat(){ const t=store.stats; $("#stat").textContent = t.q? ("Visa: "+t.ok+"/"+t.q+" oikein"):""; }
+
+// ---- views ----
+const views = {};
+
+views.cards = (root)=>{
+  let dir = store.dir||"tf", cur=null, flipped=false;
+  root.innerHTML = '<div class="panel"><div class="row"><select id="deck" aria-label="Sanasto"></select></div>'+
+    '<div class="seg" id="dir"><button data-d="tf">Tigrinya → suomi</button><button data-d="ft">Suomi → tigrinya</button></div>'+
+    '<div class="card" id="card" role="button" tabindex="0" aria-label="Käännä kortti"></div>'+
+    '<div class="row" id="grade" hidden><button class="btn bad" id="again">Uudestaan</button><button class="btn good" id="know">Osasin</button></div>'+
+    '<div class="row"><div class="bar" style="flex:1"><i id="prog"></i></div><span class="small" id="progt"></span></div></div>';
+  deckOptions($("#deck"));
+  const cards = ()=>getDeck($("#deck").value);
+  function pick(){
+    const cs = cards(); const weights = cs.map(c=>{const b=store.box[key(c)]||0; return b>=3?1:(4-b)*3});
+    let tot=weights.reduce((a,b)=>a+b,0), r=Math.random()*tot, i=0;
+    for(;i<cs.length;i++){r-=weights[i]; if(r<=0)break}
+    let c=cs[Math.min(i,cs.length-1)]; if(cs.length>1&&cur&&key(c)===key(cur)) c=cs[(cs.indexOf(c)+1)%cs.length];
+    return c;
+  }
+  function render(){
+    if(!cur) cur=pick();
+    const frontHtml = dir==="tf" ? front(cur) : '<div class="big">'+cur.fi+'</div>';
+    const backHtml = dir==="tf" ? '<div class="big">'+cur.fi+'</div>' : front(cur);
+    $("#card").innerHTML = flipped ? backHtml+'<div class="hint">Osasitko?</div>' : frontHtml+'<div class="hint">Napauta kääntääksesi</div>';
+    $("#grade").hidden = !flipped;
+    document.querySelectorAll("#dir button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.d===dir)));
+    const cs=cards(), known=cs.filter(c=>(store.box[key(c)]||0)>=3).length;
+    $("#prog").style.width=(known/cs.length*100)+"%"; $("#progt").textContent=known+"/"+cs.length+" opittu";
+  }
+  const flip=()=>{flipped=!flipped;render()};
+  $("#card").onclick=flip; $("#card").onkeydown=(e)=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();flip()}};
+  function grade(ok){const k=key(cur);store.box[k]=ok?Math.min(3,(store.box[k]||0)+1):0;save();cur=null;flipped=false;cur=pick();render()}
+  $("#know").onclick=()=>grade(true); $("#again").onclick=()=>grade(false);
+  $("#deck").onchange=()=>{store.deck=$("#deck").value;save();cur=null;flipped=false;render()};
+  $("#dir").onclick=(e)=>{const d=e.target.dataset.d;if(d){dir=d;store.dir=d;save();flipped=false;render()}};
+  render();
+};
+
+views.quiz = (root)=>{
+  let dir=store.qdir||"tf", n=0, score=0, total=10, wrong=[], order=[];
+  root.innerHTML='<div class="panel"><div class="row"><select id="deck" aria-label="Sanasto"></select></div>'+
+   '<div class="seg" id="dir"><button data-d="tf">Tigrinya → suomi</button><button data-d="ft">Suomi → tigrinya</button></div>'+
+   '<div id="qbox"></div></div>';
+  deckOptions($("#deck"));
+  function start(){const cs=getDeck($("#deck").value);order=shuffle(cs).slice(0,total);n=0;score=0;wrong=[];ask()}
+  function ask(){
+    const box=$("#qbox"); const cs=getDeck($("#deck").value);
+    if(n>=order.length){
+      box.innerHTML='<h2 style="margin:14px 0 6px">'+score+' / '+order.length+'</h2><p>'+(score===order.length?"Täydet pisteet!":"Hyvä alku, kertaa virheet alta.")+'</p>'+
+        (wrong.length?'<div class="small">Kertaa:</div>'+wrong.map(c=>'<div class="qa"><span class="geez">'+(c.tg||"")+'</span> <span class="ph">'+c.ph+'</span> = '+c.fi+'</div>').join(""):"")+
+        '<div class="row"><button class="btn primary" id="again">Uusi kierros</button></div>';
+      $("#again").onclick=start; return;
+    }
+    const c=order[n]; const pool=cs.length>=4?cs:allCards;
+    let opts=[c]; const used=new Set([dir==="tf"?c.fi:c.ph]);
+    for(const x of shuffle(pool)){ if(opts.length>=4)break; const v=dir==="tf"?x.fi:x.ph; if(!used.has(v)){used.add(v);opts.push(x)} }
+    opts=shuffle(opts);
+    const q = dir==="tf" ? front(c) : '<div class="big">'+c.fi+'</div>';
+    box.innerHTML='<div class="bar" style="margin:12px 0"><i style="width:'+(n/order.length*100)+'%"></i></div><div class="card" style="cursor:default;min-height:140px">'+q+'</div><div class="opts">'+
+      opts.map((o,i)=>'<button class="opt" data-i="'+i+'">'+(dir==="tf"?o.fi:(o.tg?'<span class="geez">'+o.tg+'</span> ':'')+'<span class="ph">'+o.ph+'</span>')+'</button>').join("")+'</div>';
+    box.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{
+      const o=opts[+b.dataset.i], ok=o===c; store.stats.q++; if(ok){store.stats.ok++;score++}else wrong.push(c); save(); updateStat();
+      box.querySelectorAll(".opt").forEach((x,i)=>{x.disabled=true; if(opts[i]===c)x.classList.add("right"); else if(x===b)x.classList.add("wrong")});
+      setTimeout(()=>{n++;ask()}, ok?650:1500);
+    });
+  }
+  $("#deck").onchange=()=>{store.deck=$("#deck").value;save();start()};
+  $("#dir").onclick=(e)=>{const d=e.target.dataset.d;if(d){dir=d;store.qdir=d;save();syncSeg();start()}};
+  function syncSeg(){document.querySelectorAll("#dir button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.d===dir)))}
+  syncSeg(); start();
+};
+
+views.build = (root)=>{
+  const items = shuffle(D.sentences.filter(s=>s.ph.split(/\s+/).length>=2&&s.ph.split(/\s+/).length<=9));
+  let i=0, picked=[], pool=[], solved=0;
+  root.innerHTML='<div class="panel"><div class="small">Rakenna tigrinyaksi:</div><h2 id="fi" style="margin:6px 0 10px;font-size:1.25rem"></h2><div class="answer" id="ans" aria-label="Rakennettu lause"></div><div class="tiles" id="tiles"></div><div id="msg" class="msg"></div><div class="row"><button class="btn" id="clear">Tyhjennä</button><button class="btn" id="hint">Vihje</button><button class="btn primary" id="check">Tarkista</button></div><div class="small" id="cnt"></div></div>';
+  function load(){
+    const s=items[i%items.length]; $("#fi").textContent=s.fi;
+    pool=shuffle(s.ph.split(/\s+/).map((w,k)=>({w,k}))); picked=[]; $("#msg").textContent=""; $("#msg").className="msg"; draw();
+    $("#cnt").textContent="Lähde: Handout "+s.src.replace("H","")+" | ratkaistu "+solved;
+  }
+  function draw(){
+    $("#ans").innerHTML=picked.map((t,idx)=>'<button class="tile" data-a="'+idx+'">'+t.w+'</button>').join("");
+    $("#tiles").innerHTML=pool.filter(t=>!picked.includes(t)).map(t=>'<button class="tile" data-p="'+t.k+'">'+t.w+'</button>').join("");
+  }
+  const s0=()=>items[i%items.length];
+  root.onclick=(e)=>{
+    const b=e.target.closest("button"); if(!b)return;
+    if(b.dataset.p!==undefined){const t=pool.find(x=>x.k===+b.dataset.p&&!picked.includes(x));if(t){picked.push(t);draw()}}
+    else if(b.dataset.a!==undefined){picked.splice(+b.dataset.a,1);draw()}
+  };
+  $("#clear").onclick=()=>{picked=[];draw();$("#msg").textContent=""};
+  $("#hint").onclick=()=>{const w=s0().ph.split(/\s+/);$("#msg").className="msg";$("#msg").textContent="Ensimmäinen sana: "+w[0]};
+  $("#check").onclick=()=>{
+    const want=s0().ph.split(/\s+/).join(" "), got=picked.map(t=>t.w).join(" ");
+    if(got===want){$("#msg").className="msg good";$("#msg").textContent="Oikein!";solved++;i++;setTimeout(load,900)}
+    else if(picked.length===pool.length){$("#msg").className="msg bad";$("#msg").textContent="Ei aivan. Oikea: "+want}
+    else {$("#msg").className="msg bad";$("#msg").textContent="Lause ei ole vielä valmis."}
+  };
+  load();
+};
+
+views.read = (root)=>{
+  let i=0, shown=false;
+  root.innerHTML='<div class="panel"><div class="row"><select id="sel" aria-label="Teksti"></select></div><div id="txt" class="card" style="cursor:default;align-items:flex-start;text-align:left;min-height:120px"></div><div id="qs"></div><div class="row"><button class="btn" id="prev">Edellinen</button><button class="btn primary" id="next">Seuraava</button></div></div>';
+  $("#sel").innerHTML=D.reading.map((r,k)=>'<option value="'+k+'">'+(k+1)+'. '+r.title+'</option>').join("");
+  function draw(){
+    const r=D.reading[i]; $("#sel").value=i;
+    $("#txt").innerHTML='<div class="ph" style="font-size:1.25rem;line-height:1.6">'+r.ph+'</div>';
+    $("#qs").innerHTML='<div class="small" style="margin-top:8px">Napauta kysymystä nähdäksesi vastauksen. Vastaa ensin mielessäsi.</div>'+r.qs.map((q,k)=>'<div class="qa"><button data-k="'+k+'">'+(k+1)+'. '+q[0]+'</button><div class="a" hidden>'+q[1]+'</div></div>').join("");
+    $("#qs").querySelectorAll("button").forEach(b=>b.onclick=()=>{const a=b.parentElement.querySelector(".a");a.hidden=!a.hidden});
+  }
+  $("#sel").onchange=()=>{i=+$("#sel").value;draw()};
+  $("#prev").onclick=()=>{i=(i-1+D.reading.length)%D.reading.length;draw()};
+  $("#next").onclick=()=>{i=(i+1)%D.reading.length;draw()};
+  draw();
+};
+
+views.listen = (root)=>{
+  let i=0, phase=0; // 0 questions only, 1 text revealed
+  root.innerHTML='<div class="panel"><div class="small">Pari lukee tekstin ääneen (tai toista oma nauhoituksesi puhelimen Äänimuistiot-sovelluksesta). Tämä sivu ei soita ääntä. Vastaa muistista ja paljasta sitten teksti.</div><div class="row"><select id="sel" aria-label="Harjoitus"></select></div><div id="body"></div><div class="row"><button class="btn" id="prev">Edellinen</button><button class="btn primary" id="next">Seuraava</button></div></div>';
+  $("#sel").innerHTML=D.listening.map((r,k)=>'<option value="'+k+'">'+(k+1)+'. '+r.title+'</option>').join("");
+  function draw(){
+    const r=D.listening[i]; $("#sel").value=i;
+    $("#body").innerHTML='<h2 style="font-size:1.1rem;margin:10px 0">Kysymykset</h2>'+r.qs.map((q,k)=>'<div class="qa"><div style="font-weight:600">'+(k+1)+'. '+q[0]+'</div>'+(phase?'<div class="a">'+q[1]+'</div>':"")+'</div>').join("")+
+      (phase?'<div class="card" style="cursor:default;margin-top:8px"><div class="ph" style="font-size:1.2rem">'+r.ph+'</div></div>':'<div class="row"><button class="btn primary" id="reveal">Näytä vastaukset ja teksti</button></div>');
+    const rv=$("#reveal"); if(rv) rv.onclick=()=>{phase=1;draw()};
+  }
+  $("#sel").onchange=()=>{i=+$("#sel").value;phase=0;draw()};
+  $("#prev").onclick=()=>{i=(i-1+D.listening.length)%D.listening.length;phase=0;draw()};
+  $("#next").onclick=()=>{i=(i+1)%D.listening.length;phase=0;draw()};
+  draw();
+};
+
+views.fidel = (root)=>{
+  let mode="chart";
+  root.innerHTML='<div class="panel"><div class="seg" id="m"><button data-m="chart">Taulukko</button><button data-m="quiz">Tunnista kirjain</button></div><div id="fb"></div></div>';
+  function draw(){
+    document.querySelectorAll("#m button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.m===mode)));
+    if(mode==="chart"){
+      $("#fb").innerHTML=D.fidel.map(f=>'<h2 style="font-size:1rem;margin:14px 0 4px">'+f.name+' <span class="small">(Handout '+f.src.replace("H","")+')</span></h2><div class="fid">'+f.g.map((g,k)=>'<div><div class="g">'+g+'</div><div class="p">'+f.p[k]+'</div></div>').join("")+'</div><div class="small">'+f.words.map(w=>'<span class="geez">'+w[0]+'</span> <span class="ph">'+w[1]+'</span> = '+w[2]).join(" | ")+'</div>').join("");
+    } else quiz();
+  }
+  function quiz(){
+    const all=D.fidel.flatMap(f=>f.g.map((g,k)=>({g,p:f.p[k]})));
+    const c=rnd(all); let opts=[c]; const used=new Set([c.p]);
+    for(const x of shuffle(all)){if(opts.length>=4)break;if(!used.has(x.p)){used.add(x.p);opts.push(x)}}
+    opts=shuffle(opts);
+    $("#fb").innerHTML='<div class="card" style="cursor:default;margin-top:12px"><div class="big geez" style="font-size:3.5rem">'+c.g+'</div></div><div class="opts">'+opts.map((o,i)=>'<button class="opt" data-i="'+i+'">'+o.p+'</button>').join("")+'</div>';
+    $("#fb").querySelectorAll(".opt").forEach(b=>b.onclick=()=>{const ok=opts[+b.dataset.i]===c;b.classList.add(ok?"right":"wrong");$("#fb").querySelectorAll(".opt").forEach((x,i)=>{x.disabled=true;if(opts[i]===c)x.classList.add("right")});setTimeout(quiz,ok?600:1400)});
+  }
+  $("#m").onclick=(e)=>{const m=e.target.dataset.m;if(m){mode=m;draw()}};
+  draw();
+};
+
+// ---- shell ----
+const nav=$("#nav"), main=$("#main");
+nav.innerHTML=TABS.map(t=>'<button class="tab" role="tab" data-t="'+t[0]+'"><b>'+t[2]+'</b>'+t[1]+'</button>').join("");
+function go(t,push){
+  if(!views[t])t="cards";
+  nav.querySelectorAll(".tab").forEach(b=>b.setAttribute("aria-selected",String(b.dataset.t===t)));
+  main.innerHTML=""; main.onclick=null; views[t](main);
+  if(push) try{history.replaceState(null,"","#"+t)}catch(e){}
+  window.scrollTo(0,0);
+}
+nav.onclick=(e)=>{const b=e.target.closest(".tab");if(b)go(b.dataset.t,true)};
+window.addEventListener("hashchange",()=>go(location.hash.slice(1),false));
+updateStat(); go(location.hash.slice(1)||"cards",false);
+</script>
