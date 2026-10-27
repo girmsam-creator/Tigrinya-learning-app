@@ -22,31 +22,12 @@ Adding your own content
 
 All content lives in content.txt. Edit it on GitHub (pencil icon), save with Commit changes, and the app picks up the new words and sentences after a few minutes. Reload the page to see them.
 
-## My group | My list name
-phonetic | ge'ez (can be empty) | meaning
-Kubaya | ኩባያ | cup
-
-#SENTENCES
-Kubaya habini | give me a cup |
-
-#READING Title
-Text on one or more lines.
-? question | answer
-
-#LISTENING Title
-Text to be read aloud.
-? question | answer
-
-Lines starting with // are comments. Do not use the | character inside a word or sentence, because it separates the fields.
 
 Files
 index.html: the app
-content.txt: all words, sentences, texts and Fidel data
 README.md: this file
 SUPPORT.md: help and how to support the project
 Source and rights
-
-The vocabulary and phrases are based on the handouts of the course "Exploring with Selam & Senai, Tigrinya 101". Spellings are copied from the handouts, and spelling varies between handouts. The app is for personal study and is not an official product of the course. If you are a rights holder and have concerns, please contact the maintainer (see SUPPORT.md).
 
 Author
 
