@@ -2,6 +2,7 @@
 // Sanalistat: ## Ryhmä | Listan nimi, sitten rivit: foneettinen | ge'ez (voi olla tyhjä) | suomeksi
 // Lauseet: #SENTENCES, sitten rivit: tigrinya foneettisesti | suomeksi
 // Luetun ja kuullun tekstit: #READING Otsikko tai #LISTENING Otsikko, teksti riveillä, kysymykset muodossa: ? kysymys | vastaus
+// Keskustelut: #CONVERSATION Otsikko, sitten rivit: A: tigrinya | suomeksi ja B: tigrinya | suomeksi (vuorotellen, vähintään kaksi riviä)
 // Fidel: #FIDEL Nimi | lähde, sitten rivi ge'ez-kirjaimista (7 kpl, välilyönnillä), rivi foneettisista (7 kpl), ja rivit: word: ge'ez | foneettinen | suomeksi
 // Rivit jotka alkavat // ovat kommentteja.
 
@@ -727,6 +728,272 @@ E'ze qedame senbet entay kitgebri eki? Ke'erif eye.
 Abey tiserhi? Ab bet timihirti yserih.
 ? Mitä kysyttiin? | Missä työskentelet.
 ? Mikä on vastaus? | Koulussa.
+
+#CONVERSATION Tapaaminen
+A: Selam. Kemey aleka? | Hei. Mitä kuuluu?
+B: Ale-ku. Yekenqeley. Men shimka? | Hyvää, kiitos. Mikä sinun nimesi on?
+A: Simon y-behal. | Nimeni on Simon.
+B: Tisbuck leila. | Hauska tavata.
+
+#CONVERSATION Kello
+A: Seat k'ndey koynu? | Mitä kello on?
+B: Seat hade koynu. | Kello on yksi.
+
+#CONVERSATION Päivä
+A: Entay me'alti eyu lomi? | Mikä päivä on tänään?
+B: Lomi hamus eyu. | Tänään on torstai.
+
+#CONVERSATION Kuukausi
+A: Entay werhi ena zelena? | Missä kuussa olemme?
+B: Werhi tkimti. | Lokakuu.
+
+#CONVERSATION Syntymäpäivä
+A: Ayenay werhi eyu ametka? | Mikä kuukausi on syntymäpäiväsi?
+B: Werhi gunbet. | Toukokuu.
+
+#CONVERSATION Keittiössä
+A: Abey alo eti byati? | Missä lautanen on?
+B: Byati tesebiru. | Lautanen on rikki.
+A: Hadish byati gezie. | Ostin uuden lautasen.
+
+#CONVERSATION Ruoka
+A: Entai alo zibelah? | Mitä on syötäväksi?
+B: Shuro. Injera. | Shuroa. Injeraa.
+A: Kemey zerihu? | Miltä se maistuu?
+B: Tu'um. | Herkullista.
+
+#CONVERSATION Toisto
+A: Seat k'ndey eki timetsi'e? | Mihin aikaan tulet?
+B: Entai ilka? | Mitä sanoit?
+A: Tigemen. | Toista.
+
+#CONVERSATION Vointi
+A: Dehan diki? | Oletko kunnossa?
+B: Kebdey hamime. | Vatsaani sattuu.
+
+#CONVERSATION Väri
+A: Entay hibri eyu ezi? | Minkä värinen tämä on?
+B: Tsaeda. | Valkoinen.
+
+#CONVERSATION Viikonloppu
+A: E'ze qedame senbet entay kitgebri eki? | Mitä teet tänä viikonloppuna?
+B: Sdray krieyom k'keyed eye. | Menen vierailemaan perheeni luona.
+
+#CONVERSATION Työ
+A: Abey tiserhi? | Missä työskentelet?
+B: Ab bet timihirti yserih. | Työskentelen koulussa.
+
+#CONVERSATION Aamutervehdys
+A: Kemay hadirka? | Hyvää huomenta! (miehelle)
+B: Dehan. | Hyvää (kunnossa).
+
+#CONVERSATION Iltatervehdys
+A: Kemay amsika? | Hyvää iltaa! (miehelle)
+B: Dehan. | Hyvää (kunnossa).
+
+#CONVERSATION Nimi ja kiitos
+A: Men shimka? | Mikä sinun nimesi on?
+B: Samuel y-behal. Tisbuck leila. | Nimeni on Samuel. Hauska tavata.
+A: Yekenyeley. | Kiitos!
+
+#CONVERSATION Asuinpaikka
+A: Abey tinebir? | Missä asut?
+B: Ab Espoo ynebir. | Asun Espoossa.
+
+#CONVERSATION Vanhemmat
+A: Adeka men tibehal? | Mikä äitisi nimi on?
+B: Adey Maria tibehal. | Äitini nimi on Maria.
+A: Aboka men yibehal? | Mikä isäsi nimi on?
+B: Aboy Daniel yibehal. | Isäni nimi on Daniel.
+
+#CONVERSATION Kenen poika
+A: Wedi men eka? | Kenen poika olet?
+B: Wedi Daniel eye. | Olen Danielin poika.
+
+#CONVERSATION Sisarukset
+A: Kidney ahwat alowuka? | Montako sisarusta sinulla on?
+B: Kil-te ahwat alowni! | Minulla on kaksi sisarusta!
+
+#CONVERSATION Kasvupaikka
+A: Abey abika? | Missä kasvoit?
+B: Ab Asmera abye. | Kasvoin Asmarassa.
+
+#CONVERSATION Viikonloppu: matka
+A: E'ze qedame senbet entay kitgebri eki? | Mitä teet tänä viikonloppuna?
+B: Kgeyish eye. | Matkustan.
+
+#CONVERSATION Viikonloppu: kirkko
+A: E'ze qedame senbet entay kitgebri eki? | Mitä teet tänä viikonloppuna?
+B: Betekristian k'keyd eye. | Menen kirkkoon.
+
+#CONVERSATION Viikonloppu: lepo
+A: E'ze qedame senbet entay kitgebri eki? | Mitä teet tänä viikonloppuna?
+B: Ke'erif eye. | Aion levätä.
+
+#CONVERSATION Näkö
+A: Dehan diki? | Oletko kunnossa?
+B: Ayney mray abyuni. | En näe.
+
+#CONVERSATION Kuulo
+A: Dehan diki? | Oletko kunnossa?
+B: Ezney tsemime. | En kuule.
+
+#CONVERSATION Päänsärky
+A: Dehan diki? | Oletko kunnossa?
+B: Risey hamime. | Päähäni sattuu.
+
+#CONVERSATION Ikä
+A: Kindey eyu ametka? | Kuinka vanha olet?
+B: Wedi aserte amet eye. | Olen kymmenen vuotta vanha.
+
+#CONVERSATION Syntymäpäivä 2
+A: Me-ahs eyu elet ametki? | Milloin syntymäpäiväsi on?
+B: Zteweledkulu elet Gunbet aserte shduste eyu. | Syntymäpäiväni on toukokuun 16. päivä.
+
+#CONVERSATION Syntymäkuukausi: kesäkuu
+A: Ayenay werhi eyu ametka? | Mikä kuukausi on syntymäpäiväsi?
+B: Werhi seh-ne. | Kesäkuu.
+
+#CONVERSATION Veljet
+A: Kidney ahwat alowuka? | Montako sisarusta sinulla on?
+B: Klite ah'wat aloni. | Minulla on kaksi veljeä.
+
+#CONVERSATION Missä lusikka
+A: Abey alo eti manka? | Missä lusikka on?
+B: Ab kishine alo. | Keittiössä.
+
+#CONVERSATION Missä kuppi
+A: Abey alo eti kubaya? | Missä kuppi on?
+B: Kubaya tesebiru. | Kuppi on rikki.
+
+#CONVERSATION Rikki ja uusi
+A: Kubaya tesebiru. | Kuppi on rikki.
+B: Hadish kubaya gezie. | Ostin uuden kupin.
+
+#CONVERSATION Keittiössä
+A: Abey alo eti dsti? | Missä kattila on?
+B: Ab kishine alo. | Keittiössä.
+
+#CONVERSATION Maku: tulinen
+A: Kemey zerihu? | Miltä se maistuu?
+B: Merir. | Tulista.
+
+#CONVERSATION Maku: makea
+A: Kemey zerihu? | Miltä se maistuu?
+B: Muqur. | Makeaa.
+
+#CONVERSATION Kuumaa
+A: Jeqatsel diu? | Onko se kuumaa?
+B: Woo'uy. | Kuumaa.
+
+#CONVERSATION Aamupala
+A: Entai alo zibelah? | Mitä on syötäväksi?
+B: Bani. Tesmi. Boon. | Leipää, voita, kahvia.
+
+#CONVERSATION Illallinen
+A: Entai alo zibelah? | Mitä on syötäväksi?
+B: Derho. Selatta. Mai. | Kanaa, salaattia, vettä.
+
+#CONVERSATION Hinta
+A: Waga kendei iu? | Mitä se maksaa?
+B: Aserte. | Kymmenen.
+A: Entai ilka? | Mitä sanoit?
+B: Aserte. | Kymmenen.
+
+#CONVERSATION Kello 2
+A: Seat k'ndey koynu? | Mitä kello on?
+B: Seat kil-te koynu. | Kello on kaksi.
+
+#CONVERSATION Kello 3
+A: Seat k'ndey koynu? | Mitä kello on?
+B: Seat seleste koynu. | Kello on kolme.
+
+#CONVERSATION Kello 7.30
+A: Seat k'ndey koynu? | Mitä kello on?
+B: Seat shewate fikri. | Kello on 7.30.
+
+#CONVERSATION Kello 7.15
+A: Seat k'ndey koynu? | Mitä kello on?
+B: Seat shewate mis ribie. | Kello on 7.15.
+
+#CONVERSATION Tuloaika
+A: Seat k'ndey eki timetsi'e? | Mihin aikaan tulet?
+B: Seat hamuste k'metise eye. | Tulen kello viisi.
+
+#CONVERSATION Päivä: maanantai
+A: Entay me'alti eyu lomi? | Mikä päivä on tänään?
+B: Lomi se-nuy eyu. | Tänään on maanantai.
+
+#CONVERSATION Päivä: lauantai
+A: Entay me'alti eyu lomi? | Mikä päivä on tänään?
+B: Lomi qe'dam eyu. | Tänään on lauantai.
+
+#CONVERSATION Huomenna
+A: Entay me'alti eyu ts'ba'h? | Mikä päivä on huomenna?
+B: Ts'ba'h sen-bet eyu. | Huomenna on sunnuntai.
+
+#CONVERSATION Kuukausi: maaliskuu
+A: Entay werhi ena zelena? | Missä kuussa olemme?
+B: Werhi mega-beet. | Maaliskuu.
+
+#CONVERSATION Kuukausi: joulukuu
+A: Entay werhi ena zelena? | Missä kuussa olemme?
+B: Werhi tah'sas. | Joulukuu.
+
+#CONVERSATION Väri: punainen
+A: Entay hibri eyu ezi? | Minkä värinen tämä on?
+B: Qeyih. | Punainen.
+
+#CONVERSATION Väri: sininen
+A: Entay hibri eyu ezi? | Minkä värinen tämä on?
+B: Semayawi. | Sininen.
+
+#CONVERSATION Väri: musta
+A: Entay hibri eyu ezi? | Minkä värinen tämä on?
+B: Tselim. | Musta.
+
+#CONVERSATION Väri: vihreä
+A: Entay hibri eyu ezi? | Minkä värinen tämä on?
+B: Qetelya. | Vihreä.
+
+#CONVERSATION Vatsakipu
+A: Dehan dika? | Oletko kunnossa? (miehelle)
+B: Kebdey hamime. | Vatsaani sattuu.
+
+#CONVERSATION Työ: sairaala
+A: Abey tiserhi? | Missä työskentelet?
+B: Ab hikimina yserich. | Työskentelen sairaalassa.
+
+#CONVERSATION Työ: koulu
+A: Abey tiserhi? | Missä työskentelet?
+B: Ab bet timihirti yserih. | Työskentelen koulussa.
+
+#CONVERSATION Tutustuminen
+A: Selam. Men shimka? | Hei. Mikä sinun nimesi on?
+B: Biniam y-behal. Abey tinebir? | Nimeni on Biniam. Missä asut?
+A: Ab Helsinki ynebir. | Asun Helsingissä.
+B: Tisbuck leila. | Hauska tavata.
+A: Tisbuck leila. | Hauska tavata.
+
+#CONVERSATION Kuulumiset
+A: Kemey aleka? | Mitä kuuluu?
+B: Ale-ku. Yekenqeley. | Hyvää, kiitos.
+
+#CONVERSATION Aamu ja päivä
+A: Kemay hadirka? | Hyvää huomenta!
+B: Dehan. Yekenyeley. | Hyvää. Kiitos!
+A: Entay me'alti eyu lomi? | Mikä päivä on tänään?
+B: Lomi hamus eyu. | Tänään on torstai.
+
+#CONVERSATION Ilta ja kello
+A: Kemay amsika? | Hyvää iltaa!
+B: Dehan. | Hyvää.
+A: Seat k'ndey koynu? | Mitä kello on?
+B: Seat shewate koynu. | Kello on seitsemän.
+
+#CONVERSATION Viikonloppu ja perhe
+A: E'ze qedame senbet entay kitgebri eki? | Mitä teet tänä viikonloppuna?
+B: Sdray krieyom k'keyed eye. | Menen vierailemaan perheeni luona.
 
 #FIDEL He: ሀ | H2
 ሀ ሁ ሂ ሃ ሄ ህ ሆ | He Hu Hi Ha Hie H Ho
