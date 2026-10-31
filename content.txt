@@ -1,0 +1,820 @@
+// Arkitigrinya content.txt. Lisää rivejä, tallenna, ja sovellus päivittyy.
+// Sanalistat: ## Ryhmä | Listan nimi, sitten rivit: foneettinen | ge'ez (voi olla tyhjä) | suomeksi
+// Lauseet: #SENTENCES, sitten rivit: tigrinya foneettisesti | suomeksi
+// Luetun ja kuullun tekstit: #READING Otsikko tai #LISTENING Otsikko, teksti riveillä, kysymykset muodossa: ? kysymys | vastaus
+// Fidel: #FIDEL Nimi | lähde, sitten rivi ge'ez-kirjaimista (7 kpl, välilyönnillä), rivi foneettisista (7 kpl), ja rivit: word: ge'ez | foneettinen | suomeksi
+// Rivit jotka alkavat // ovat kommentteja.
+
+## Handout 1: esittely | Kysymyssanat
+Men | መን | kuka
+Kemey | ከመይ | miten
+Entay | እንታይ | mikä, mitä
+Kindey | ክንደይ | kuinka monta, paljonko
+Me'as | መዓስ | milloin
+Abey | ኣበይ | missä
+Slemintay / Nmintay | ስለምንታይ | miksi
+
+## Handout 1: esittely | Perhe
+Sdray | ስድራይ | perheeni
+Adey | ኣደይ | äitini
+Aboy | ኣቦይ | isäni
+Haftey | ሓፍተይ | siskoni
+Hawey | ሓወይ | veljeni
+Azmadey / Zemedey | ኣዝማደይ | sukulaiseni
+Aba-yay / Adde abay | ዓባየይ | isoäitini
+Aba-hagoy | ኣባሓጎይ | isoisäni
+Amoy | ኣሞይ | isän sisko (täti)
+Ha-ti-ney | ሓትነይ | äidin sisko (täti)
+How-e-boy | ሓወቦይ | isän veli (setä)
+Akoy / AiAi | ኣኮይ | äidin veli (eno)
+Wedey | ወደይ | poikani
+Gualey | ጓለይ | tyttäreni
+Sebeytey / Bealti Betey | ሰበይተይ | vaimoni
+Sebayey / Beal Betey | ሰብኣየይ | mieheni
+
+## Handout 1: esittely | Ihmiset ja kotona
+Abo |  | isä
+Ade |  | äiti
+Hawi |  | veli
+Hafti |  | sisko
+Go-re-bet |  | naapuri
+Arki |  | ystävä (mies)
+Maha'za |  | ystävä (nainen)
+Zemed |  | serkut
+Geza |  | koti
+Hezitey |  | morsian, kihlattu
+Nay adey abo |  | äitini isä
+Abi |  | iso
+Ni-e-sh-tay |  | pieni
+Seb |  | henkilö
+Seb'ay |  | mies
+Sebey'ti |  | nainen
+Wedi |  | poika
+Gu'al |  | tyttö
+
+## Handout 1: esittely | Numerot
+Bado |  | 0
+Hade |  | 1
+Kil-te |  | 2
+Seleste |  | 3
+Arbate |  | 4
+Hamushte |  | 5
+Shudushte |  | 6
+Shewate |  | 7
+Shemonte |  | 8
+Tisheate |  | 9
+Aserte |  | 10
+Aserte hade |  | 11
+Aserte kil-te |  | 12
+Aserte seleste |  | 13
+Eesra |  | 20
+Eesran haden |  | 21
+Selasa |  | 30
+Arba |  | 40
+Hamsa |  | 50
+Sussa |  | 60
+Seb'a |  | 70
+Semanya |  | 80
+Tes'a |  | 90
+Mee'-tee |  | 100
+Kilete mee'-tee |  | 200
+Shi'h' |  | 1000
+
+## Handout 1: esittely | Järjestysluvut
+Qedamay |  | ensimmäinen
+Kal'ay |  | toinen
+Salsay |  | kolmas
+Ra'bay |  | neljäs
+Hamshay |  | viides
+Sadshay |  | kuudes
+Shabay |  | seitsemäs
+Sham'nay |  | kahdeksas
+Tasaiy |  | yhdeksäs
+Asray |  | kymmenes
+
+## Handout 1: esittely | Pronominit
+Ana |  | minä
+Nessexa |  | sinä (mies)
+Nessexi |  | sinä (nainen)
+Nessu |  | hän (mies)
+Nessa |  | hän (nainen)
+Nehna |  | me
+Nessexatum |  | te (miehet)
+Nessexaten |  | te (naiset)
+Nessatom |  | he (miehet)
+Nessatan |  | he (naiset)
+
+## Handout 1: esittely | 'Olla'-muodot
+Alekhu |  | minä olen
+Alekha |  | sinä olet (mies)
+Alekhi |  | sinä olet (nainen)
+Alo |  | hän on (mies)
+Ala |  | hän on (nainen)
+Alona |  | me olemme
+Alokhum |  | te olette (miehet)
+Alekhin |  | te olette (naiset)
+Alewi |  | he ovat (miehet)
+Alewa |  | he ovat (naiset)
+
+## Handout 1: esittely | Dekim- (väsynyt)
+dekim-e |  | olen väsynyt
+dekim-ka |  | olet väsynyt (mies)
+dekim-ki |  | olet väsynyt (nainen)
+dekim-u |  | hän on väsynyt (mies)
+dekim-a |  | hän on väsynyt (nainen)
+dekim-na |  | olemme väsyneitä
+dekim-kum |  | olette väsyneitä (miehet)
+dekim-om |  | he ovat väsyneitä (miehet)
+
+## Handout 1: esittely | Beli- (syödä)
+beli-e |  | minä (syön)
+beli-ka |  | sinä, mies (syöt)
+beli-ki |  | sinä, nainen (syöt)
+beli-u |  | hän, mies (syö)
+beli-a |  | hän, nainen (syö)
+beli-na |  | me (syömme)
+beli-kum |  | te, miehet (syötte)
+beli-om |  | he, miehet (syövät)
+
+## Handout 2: keittiö ja ruoka | Keittiö
+Kshine |  | keittiö
+Manka |  | lusikka
+Farketa |  | haarukka
+Byati / Shahani |  | lautanen
+Kubaya |  | kuppi
+Kara |  | veitsi
+Berad |  | teekannu
+Dsti |  | kattila
+Forno |  | uuni
+Badela |  | paistinpannu
+Mesob |  | injera-kori
+
+## Handout 2: keittiö ja ruoka | Ruoka ja juoma
+Qursee |  | aamiainen
+Misah |  | lounas
+Derar |  | illallinen
+Bani |  | leipä
+Sga Beggi |  | naudanliha
+Formajo |  | juusto
+Derho |  | kana
+Assa |  | kala
+Tesmi |  | voi
+Berbere |  | pippuri (berbere)
+Balengua |  | pavut
+Hamlee |  | vihannekset
+Shigurtee |  | sipulit
+Dinish |  | peruna
+Selatta |  | salaatti
+Qemen |  | mauste
+Boon |  | kahvi
+Sha'hee |  | tee
+Tseba |  | maito
+Mai |  | vesi
+Mai gaz |  | kivennäisvesi
+Ko ka - Ko la |  | Coca Cola
+Shikor |  | sokeri
+Hanti biera |  | yksi olut
+
+## Handout 2: keittiö ja ruoka | Maku ja tila
+Woo'uy |  | kuuma
+Zehool |  | kylmä
+Niquetsh / Nequs |  | kuiva
+Tu'um |  | herkullinen
+Haddish |  | tuore, uusi
+Merir |  | tulinen
+Muqur |  | makea
+Bekka |  | riittää
+Aitamenin |  | mauton
+Tu'um aihonen |  | ei ole herkullista
+
+## Handout 2: keittiö ja ruoka | Shuro-resepti
+Komidere |  | tomaatit
+Shigurti |  | sipulit
+Mai |  | vesi
+Shuro |  | shuro-jauhe
+Guoe / Gueh |  | jalapeño
+Zaytie |  | öljy
+Chew |  | suola
+Injera |  | injera
+Miwesak |  | lisätä
+Mikilaw |  | paistaa
+
+## Handout 3: aika | Viikonpäivät
+Se-nuy | ሰኑይ | maanantai
+Se-lus | ሰሉስ | tiistai
+Reb-o'h | ረቡዕ | keskiviikko
+Ha'moos | ሓሙስ | torstai
+Ah'rbee | ዓርቢ | perjantai
+Qe'dam | ቐዳም | lauantai
+Sen-bet | ሰንበት | sunnuntai
+
+## Handout 3: aika | Kuukaudet
+T'ri | ጥሪ | tammikuu
+Leka'teet | ለካቲት | helmikuu
+Mega-beet | መጋቢት | maaliskuu
+Mee-yaz-ya | ሚያዝያ | huhtikuu
+Goon-bet | ጉንበት | toukokuu
+Seh-ne | ሰነ | kesäkuu
+Ha'm-lee | ሓምለ | heinäkuu
+Nehase | ነሓሰ | elokuu
+Mes-ke-rem | መስከረም | syyskuu
+T'k'mti | ጥቕምቲ | lokakuu
+H'dar | ሕዳር | marraskuu
+Tah'sas | ታሕሳስ | joulukuu
+
+## Handout 3: aika | Vuodenajat
+Kremti | ክረምቲ | kesä (sadekausi, heinä-syyskuu)
+Hagay | ሓጋይ | talvi (kuivakausi, marras-maaliskuu)
+Tsedeya | ጽድያ | kevät (huhti-kesäkuu)
+Qew'e | ቀውዒ | syksy (syys-marraskuu)
+
+## Handout 3: aika | Aikasanat
+Deqiq | ደቂቅ | minuutti
+Se'at | ሰዓት | tunti, kello
+Me'alti | መዓልቲ | päivä
+Semun | ሰሙን | viikko
+Werhi | ወርሒ | kuukausi
+Amet | ዓመት | vuosi
+Gize | ጊዜ | aika
+
+## Handout 3: aika | Tänään, eilen, huomenna
+Lomi / Lomanti | ሎሚ | tänään
+T'mali | ትማሊ | eilen
+Ts'ba'h | ጽባሕ | huomenna
+Dh'ri Ts'ba'h | ድሕሪ ጽባሕ | ylihuomenna
+Qdmi T'mali | ቕድሚ ትማሊ | toissa päivänä
+Zimezed |  | seuraava
+
+## Handout 3: aika | Vuorokaudenajat
+Nig'ho | ንግሆ | aamu
+Dhri Qetri | ድሕሪ ቀትሪ | iltapäivä
+Qetri / Fadus | ቀትሪ | keskipäivä
+M'shet | ምሸት | ilta
+Leyti | ለይቲ | yö
+Frki Leyti | ፍርቂ ለይቲ | keskiyö
+
+## Handout 3: aika | Kellonajat
+Seat shewate |  | kello 7.00
+Seat shewate mis ribie |  | kello 7.15
+Seat shewaten isra |  | kello 7.20
+Seat shewate fikri |  | kello 7.30
+Ribie godel n seat shemunte |  | kello 7.45 (neljännes vaille 8)
+Aserte godel n seat shemunte |  | kello 7.50 (kymmenen vaille 8)
+
+## Handout 4: värit ja keho | Värit
+Hibri | ሕብሪ | väri
+B'cha | ብጫ | keltainen
+Qetelya | ቀጠልያ | vihreä
+Semayawi | ሰማያዊ | sininen
+Qeyih | ቀይሕ | punainen
+Roza | ሮዛ | vaaleanpunainen
+Lila (weyni) | ሊላ | violetti
+Aranshoni | ኣራንሾኒ | oranssi
+Tsaeda | ጻዕዳ | valkoinen
+Tselim | ጸሊም | musta
+Bunawi | ቡናዊ | ruskea
+
+## Handout 4: värit ja keho | Aistit
+Hamuste Hwasat | ሓሙሽተ ህዋሳት | viisi aistia
+Mdhsas | ምድህሳስ | tuntoaisti
+Msma'a | ምስማዕ | kuulo
+Mray | ምርኣይ | näkö
+Mshtat | ምሽታት | hajuaisti
+Mstmekar | ምስትምቃር | makuaisti
+
+## Handout 4: värit ja keho | Kehonosat
+Ezni | እዝኒ | korva
+Ayni | ዓይኒ | silmä
+Afincha | ኣፍንጫ | nenä
+Tseguri | ጸጉሪ | hius
+Egri | እግሪ | jalka
+Eid | ኢድ | käsi
+Kebdi | ከብዲ | vatsa
+Sni | ስኒ | hampaat
+Brki | ብርኪ | polvi
+Tushtush | ቱሽቱሽ | kainalo
+Kisad | ክሳድ | kaula
+Af | ኣፍ | suu
+Lbi | ልቢ | sydän
+Hangol | ሓንጎል | aivot
+Gnbar | ግንባር | otsa
+Melhas | መልሓስ | kieli
+Huko | ሕቖ | selkä
+Menkes | መንከስ | leuka
+Atsabti | ኣጻብዕቲ | sormet
+
+## Valmiit lauseet: Handout 1 | Lauseet
+Selam |  | Hei
+Kemey aleki / aleka? |  | Mitä kuuluu? (naiselle / miehelle)
+Ale-ku |  | Voin (hyvin)
+Men shimki / shimka? |  | Mikä sinun nimesi on?
+Simon y-behal. |  | Nimeni on Simon.
+Adeki / Adeka men shima? |  | Mikä äitisi nimi on?
+Aboki / Aboka men shimu? |  | Mikä isäsi nimi on?
+Abey tinebri / tinebir? |  | Missä asut?
+Tisbuck leila. |  | Hauska tavata.
+Yekenqeley. |  | Kiitos.
+Klite ah'wat aloni. |  | Minulla on kaksi veljeä.
+Kindey eyu ametka? |  | Kuinka vanha olet?
+Wedi aserte amet eye. |  | Olen kymmenen vuotta vanha.
+Me-ahs eyu elet ametki? |  | Milloin syntymäpäiväsi on?
+
+## Valmiit lauseet: Handout 2 | Lauseet
+Manka habini. |  | Anna minulle lusikka.
+Abey alo eti byati? |  | Missä lautanen on?
+Entai alo zibelah? |  | Mitä on syötäväksi?
+Entai entai alo absi megbi? |  | Mitä tässä ruoassa on?
+Kemey zerihu? |  | Miltä se maistuu?
+Ab forno giberiyo / gibero. |  | Laita se uuniin.
+Tisbuck kshine. |  | Mukava keittiö.
+Ab kishine aloku. |  | Olen keittiössä.
+Shahi ab berad alo. |  | Teekannussa on teetä.
+Byati tesebiru. |  | Lautanen on rikki.
+Hadish badela gezie. |  | Ostin uuden paistinpannun.
+Hejy diu tezeriu? |  | Onko tämä nyt valmis?
+Jeqatsel diu? |  | Onko se kuumaa?
+Tigemen. |  | Toista.
+Waga kendei iu? |  | Mitä se maksaa?
+Entai ilka? |  | Mitä sanoit?
+
+## Valmiit lauseet: Handout 3 | Lauseet
+Seat k'ndey koynu? |  | Mitä kello on?
+Seat hade koynu. |  | Kello on yksi.
+Seat k'ndey eki/eka timetsi'e? |  | Mihin aikaan tulet?
+Seat hamuste k'metise eye. |  | Tulen kello viisi.
+Entay me'alti eyu lomi? |  | Mikä päivä on tänään?
+Lomi hamus eyu. |  | Tänään on torstai.
+Entay werhi ena zelena? |  | Missä kuussa olemme?
+Werhi tkimti. |  | Kuu on lokakuu.
+Ayenay werhi eyu ametki / ametka? |  | Mikä kuukausi on syntymäpäiväsi?
+Werhi gunbet. |  | Toukokuu.
+Ab semun sho-ah-te me'alti alewa. |  | Viikossa on seitsemän päivää.
+Seat shewaten isra ane kehnibis jikheid. |  | Menen uimaan kello 7.20.
+Seat shewaten isra ane kegoyi jikheid. |  | Menen juoksemaan kello 7.20.
+
+## Valmiit lauseet: Handout 4 | Lauseet
+Entay hibri eyu ezi? |  | Minkä värinen tämä on?
+Dehan diki / dika? |  | Oletko kunnossa? (naiselle / miehelle)
+Kebdey hamime. |  | Vatsaani sattuu.
+Risey hamime. |  | Päähäni sattuu.
+Ayney mray abyuni. |  | En näe.
+Ezney tsemime. |  | En kuule.
+
+## Valmiit lauseet: Class 4 keskustelut | Lauseet
+Selam! |  | Hei!
+Kemay alena? Kemay alekum? Kemay aleki / aleka? |  | Mitä kuuluu? (eri puhuteltaville)
+Men shimki / shimka / shimkum? |  | Mikä sinun nimesi on?
+Abey tinebri / tinebir / tinebru? |  | Missä asut?
+Adeki / adeka men tibehal? |  | Mikä äitisi nimi on?
+Aboka / aboki men yibehal? |  | Mikä isäsi nimi on?
+Yekenyeley. |  | Kiitos!
+Kemay hadirki / hadirka / hadirkum? |  | Hyvää huomenta!
+Kemay amsika / amsiki / amsikum? |  | Hyvää iltaa!
+Gual / wedi men eki / eka? |  | Kenen tytär / poika olet?
+Kidney ahwat alowki / alowuka? |  | Montako sisarusta sinulla on? Mitkä ovat heidän nimensä?
+Abey abiki / abika? |  | Missä kasvoit?
+Abey tiserhi / tiserh / tserhu? |  | Missä työskentelet?
+Ab bet timihirti yserih. |  | Työskentelen koulussa.
+Ab hikimina yserich. |  | Työskentelen sairaalassa.
+Abeyenay betmihirti keydka / keydki? |  | Missä koulussa kävit?
+E'ze qedame senbet entay kitgebri / kitgebir eki / eka? |  | Mitä teet tänä viikonloppuna?
+Kgeyish eye. |  | Matkustan.
+Betekristian k'keyd eye. |  | Menen kirkkoon.
+Mesgid k'keyed eye. |  | Menen moskeijaan.
+Sdray krieyom k'keyed eye. |  | Menen vierailemaan perheeni luona.
+Ke'erif eye. |  | Aion levätä.
+
+## Handout 2-4: Fidel | Fidel-esimerkkisanat
+Hager | ሃገር | maa
+Harur | ሃሩር | kuuma
+Lomi | ሎሚ | tänään
+Lemin | ለሚን | sitruuna
+Harmaz | ሓርማዝ | norsu
+Hagos | ሓጐስ | ilo
+Mekina | መኪና | auto
+Msah | ምሳሕ | lounas
+Rebuh | ረቡዕ | keskiviikko
+Rgibit | ርጊቢት | lintu
+Se'at | ሰዓት | kello
+Selus | ሰሉስ | tiistai
+Su'sa | ሱሳ | kuusikymmentä
+Shebeth | ሸበጥ | sandaali
+Shahi | ሻሂ | tee
+Shiro | ሽሮ | shiro
+Qe'telia | ቀጠልያ | vihreä
+Qol'a | ቆልዓ | lapsi
+Qe'lem | ቀለም | maali
+Be'les | በለስ | kaktus
+Be'gie | በጊዕ | lammas
+Babur | ባቡር | juna
+Temen | ተመን | käärme
+Tarik | ታሪኽ | historia
+Torta | ቶርታ | kakku
+Chow | ቻው | hei hei
+Chchero | ችቸሮ | stadion
+Chayna | ቻይና | Kiina
+Nebri | ነብሪ | tiikeri
+Newih | ነዊሕ | pitkä
+Negram | ነግራም | hankala ihminen, riidanhaastaja
+Anbesa | ኣንበሳ | leijona
+Asmera | ኣስመራ | Asmara
+Abo | ኣቦ | isä
+Keren | ከረን | Keren (kaupunki)
+Kubaya | ኩባያ | kuppi
+Caroti | ካሮቲ | porkkana
+Khokob | ኾኸብ | tähti
+Haseeka | ሓሰኻ | madot
+Eshokh | እሾኽ | piikit
+Wekariya | ወካርያ | hyeena
+Werki | ወርቂ | kulta
+Weyni | ወይኒ | viinirypäle
+
+#SENTENCES
+Selam | Hei | H1
+Ale-ku | Voin (hyvin) | H1
+Simon y-behal. | Nimeni on Simon. | H1
+Tisbuck leila. | Hauska tavata. | H1
+Yekenqeley. | Kiitos. | H1
+Klite ah'wat aloni. | Minulla on kaksi veljeä. | H1
+Kindey eyu ametka? | Kuinka vanha olet? | H1
+Wedi aserte amet eye. | Olen kymmenen vuotta vanha. | H1
+Me-ahs eyu elet ametki? | Milloin syntymäpäiväsi on? | H1
+Manka habini. | Anna minulle lusikka. | H2
+Abey alo eti byati? | Missä lautanen on? | H2
+Entai alo zibelah? | Mitä on syötäväksi? | H2
+Entai entai alo absi megbi? | Mitä tässä ruoassa on? | H2
+Kemey zerihu? | Miltä se maistuu? | H2
+Tisbuck kshine. | Mukava keittiö. | H2
+Ab kishine aloku. | Olen keittiössä. | H2
+Shahi ab berad alo. | Teekannussa on teetä. | H2
+Byati tesebiru. | Lautanen on rikki. | H2
+Hadish badela gezie. | Ostin uuden paistinpannun. | H2
+Hejy diu tezeriu? | Onko tämä nyt valmis? | H2
+Jeqatsel diu? | Onko se kuumaa? | H2
+Tigemen. | Toista. | H2
+Waga kendei iu? | Mitä se maksaa? | H2
+Entai ilka? | Mitä sanoit? | H2
+Seat k'ndey koynu? | Mitä kello on? | H3
+Seat hade koynu. | Kello on yksi. | H3
+Seat hamuste k'metise eye. | Tulen kello viisi. | H3
+Entay me'alti eyu lomi? | Mikä päivä on tänään? | H3
+Lomi hamus eyu. | Tänään on torstai. | H3
+Entay werhi ena zelena? | Missä kuussa olemme? | H3
+Werhi tkimti. | Kuu on lokakuu. | H3
+Werhi gunbet. | Toukokuu. | H3
+Ab semun sho-ah-te me'alti alewa. | Viikossa on seitsemän päivää. | H3
+Seat shewaten isra ane kehnibis jikheid. | Menen uimaan kello 7.20. | H3
+Seat shewaten isra ane kegoyi jikheid. | Menen juoksemaan kello 7.20. | H3
+Entay hibri eyu ezi? | Minkä värinen tämä on? | H4
+Kebdey hamime. | Vatsaani sattuu. | H4
+Risey hamime. | Päähäni sattuu. | H4
+Ayney mray abyuni. | En näe. | H4
+Ezney tsemime. | En kuule. | H4
+Selam! | Hei! | C4
+Yekenyeley. | Kiitos! | C4
+Ab bet timihirti yserih. | Työskentelen koulussa. | C4
+Ab hikimina yserich. | Työskentelen sairaalassa. | C4
+Kgeyish eye. | Matkustan. | C4
+Betekristian k'keyd eye. | Menen kirkkoon. | C4
+Mesgid k'keyed eye. | Menen moskeijaan. | C4
+Sdray krieyom k'keyed eye. | Menen vierailemaan perheeni luona. | C4
+Ke'erif eye. | Aion levätä. | C4
+Farketa habini. | Anna minulle haarukka. | H1-4
+Kubaya habini. | Anna minulle kuppi. | H1-4
+Kara habini. | Anna minulle veitsi. | H1-4
+Mai habini. | Anna minulle vesi. | H1-4
+Boon habini. | Anna minulle kahvi. | H1-4
+Sha'hee habini. | Anna minulle tee. | H1-4
+Bani habini. | Anna minulle leipä. | H1-4
+Tseba habini. | Anna minulle maito. | H1-4
+Abey alo eti manka? | Missä lusikka on? | H1-4
+Abey alo eti farketa? | Missä haarukka on? | H1-4
+Abey alo eti kubaya? | Missä kuppi on? | H1-4
+Abey alo eti berad? | Missä teekannu on? | H1-4
+Abey alo eti dsti? | Missä kattila on? | H1-4
+Abey alo eti badela? | Missä paistinpannu on? | H1-4
+Abey alo eti mesob? | Missä injera-kori on? | H1-4
+Kubaya tesebiru. | Kuppi on rikki. | H1-4
+Berad tesebiru. | Teekannu on rikki. | H1-4
+Manka tesebiru. | Lusikka on rikki. | H1-4
+Dsti tesebiru. | Kattila on rikki. | H1-4
+Mesob tesebiru. | Injera-kori on rikki. | H1-4
+Hadish manka gezie. | Ostin uuden lusikan. | H1-4
+Hadish kubaya gezie. | Ostin uuden kupin. | H1-4
+Hadish dsti gezie. | Ostin uuden kattilan. | H1-4
+Hadish berad gezie. | Ostin uuden teekannun. | H1-4
+Hadish kara gezie. | Ostin uuden veitsen. | H1-4
+Lomi Se-nuy eyu. | Tänään on maanantai. | H1-4
+Lomi Se-lus eyu. | Tänään on tiistai. | H1-4
+Lomi Reb-o'h eyu. | Tänään on keskiviikko. | H1-4
+Lomi Ah'rbee eyu. | Tänään on perjantai. | H1-4
+Lomi Qe'dam eyu. | Tänään on lauantai. | H1-4
+Lomi Sen-bet eyu. | Tänään on sunnuntai. | H1-4
+Ts'ba'h Se-nuy eyu. | Huomenna on maanantai. | H1-4
+Ts'ba'h Reb-o'h eyu. | Huomenna on keskiviikko. | H1-4
+Ts'ba'h Ha'moos eyu. | Huomenna on torstai. | H1-4
+Ts'ba'h Sen-bet eyu. | Huomenna on sunnuntai. | H1-4
+Werhi T'ri. | Kuukausi on tammikuu. | H1-4
+Werhi Mega-beet. | Kuukausi on maaliskuu. | H1-4
+Werhi Seh-ne. | Kuukausi on kesäkuu. | H1-4
+Werhi Nehase. | Kuukausi on elokuu. | H1-4
+Werhi Mes-ke-rem. | Kuukausi on syyskuu. | H1-4
+Werhi H'dar. | Kuukausi on marraskuu. | H1-4
+Werhi Tah'sas. | Kuukausi on joulukuu. | H1-4
+Seat Kil-te koynu. | Kello on kaksi. | H1-4
+Seat Seleste koynu. | Kello on kolme. | H1-4
+Seat Arbate koynu. | Kello on neljä. | H1-4
+Seat Hamushte koynu. | Kello on viisi. | H1-4
+Seat Shudushte koynu. | Kello on kuusi. | H1-4
+Seat Aserte koynu. | Kello on kymmenen. | H1-4
+Ab Helsinki y-nebir. | Asun paikassa Helsinki. | H1-4
+Ab Espoo y-nebir. | Asun paikassa Espoo. | H1-4
+Ab Asmara y-nebir. | Asun paikassa Asmara. | H1-4
+Ab Geza y-nebir. | Asun paikassa kotona. | H1-4
+Simon y-behal. | Nimeni on Simon. | H1-4
+Biniam y-behal. | Nimeni on Biniam. | H1-4
+Samuel y-behal. | Nimeni on Samuel. | H1-4
+Adey Maria t-behal. | Äitini nimi on Maria. | H1-4
+Adey Selam t-behal. | Äitini nimi on Selam. | H1-4
+Adey ab geza ala. | Äitini on kotona. | H1-4
+Aboy ab geza alo. | Isäni on kotona. | H1-4
+Hawey ab geza alo. | Veljeni on kotona. | H1-4
+Haftey ab geza ala. | Siskoni on kotona. | H1-4
+Adey ab kishine ala. | Äitini on keittiössä. | H1-4
+Aboy ab kishine alo. | Isäni on keittiössä. | H1-4
+Ab Asmera abye. | Kasvoin paikassa Asmara. | H1-4
+Ab Keren abye. | Kasvoin paikassa Keren. | H1-4
+Ab Helsinki abye. | Kasvoin paikassa Helsinki. | H1-4
+Aboy Daniel yibehal. | Isäni nimi on Daniel. | H1-4
+Aboy Biniam yibehal. | Isäni nimi on Biniam. | H1-4
+Entay hibri eyu ezi? Tsaeda. | Minkä värinen tämä on? Valkoinen. | H1-4
+Entay hibri eyu ezi? Tselim. | Minkä värinen tämä on? Musta. | H1-4
+Entay hibri eyu ezi? Qeyih. | Minkä värinen tämä on? Punainen. | H1-4
+Entay hibri eyu ezi? Semayawi. | Minkä värinen tämä on? Sininen. | H1-4
+Entay hibri eyu ezi? Qetelya. | Minkä värinen tämä on? Vihreä. | H1-4
+Entay hibri eyu ezi? B'cha. | Minkä värinen tämä on? Keltainen. | H1-4
+Entay hibri eyu ezi? Bunawi. | Minkä värinen tämä on? Ruskea. | H1-4
+Entay hibri eyu ezi? Aranshoni. | Minkä värinen tämä on? Oranssi. | H1-4
+
+#READING Esittely
+Selam. Simon y-behal. Ab Helsinki y-nebir. Adey Maria t-behal. Aboy Daniel y-behal. Klite ah'wat aloni.
+? Mikä kertojan nimi on? | Simon.
+? Missä hän asuu? | Helsingissä.
+? Mikä äidin nimi on? | Maria.
+? Mikä isän nimi on? | Daniel.
+? Montako veljeä hänellä on? | Kaksi.
+
+#READING Päivä ja paikka
+Lomi hamus eyu. Seat hamuste koynu. Ab kishine aloku. Shahi ab berad alo.
+? Mikä päivä on tänään? | Torstai.
+? Mikä kellonaika on? | Viisi (kello on viisi).
+? Missä kertoja on? | Keittiössä.
+? Mitä teekannussa on? | Teetä.
+
+#READING Syntymäpäivä
+Selam; Biniam y-behal. Tisbuck leila. Wedi aserte amet eye. Zteweledkulu elet Gunbet aserte shduste eyu.
+? Mikä kertojan nimi on? | Biniam.
+? Kuinka vanha hän on? | Kymmenen.
+? Milloin hänen syntymäpäivänsä on? | Toukokuun 16. päivä.
+
+#READING Perhe kotona
+Adey ab geza ala. Aboy ab geza alo. Haftey ab kishine ala. Hawey ab geza alo. Tisbuck geza.
+? Missä äiti on? | Kotona.
+? Missä isä on? | Kotona.
+? Missä sisko on? | Keittiössä.
+? Mitä kodista sanotaan? | Että se on mukava.
+
+#READING Kellonajat
+Seat shewate. Seat shewate mis ribie. Seat shewaten isra. Seat shewate fikri.
+? Mitä neljä kellonaikaa mainitaan? | 7.00, 7.15, 7.20 ja 7.30.
+? Mikä niistä on kolmas? | 7.20.
+
+#READING Ateriat
+Qursee: Bani, Tesmi, Boon. Misah: Shuro, Injera. Derar: Derho, Selatta, Mai.
+? Mitä aamiaiseksi? | Leipää, voita, kahvia.
+? Mitä lounaaksi? | Shuroa ja injeraa.
+? Mitä illalliseksi? | Kanaa, salaattia, vettä.
+
+#READING Resepti
+Miwesak Shigurti ab disti. Shigurti mikilaw. Komidere miwesak. Berbere miwesak.
+? Mitä lisätään ensin ja mihin? | Sipulit kattilaan.
+? Mitä sipulille tehdään seuraavaksi? | Paistetaan.
+? Mitä lisätään lopuksi? | Tomaatit ja berbere.
+
+#READING Vuodenajat
+Kremti: Ha'mlee, Nehase. Hagay: H'dar, Tah'sas. Tsedeya: Mee-yaz-ya.
+? Missä vuodenajassa on heinäkuu? | Kremti (sadekausi).
+? Mitkä kaksi kuukautta on Hagay-kaudella? | Marraskuu ja joulukuu.
+? Mikä kuukausi kuuluu kevääseen? | Huhtikuu.
+
+#READING Päivän kulku
+Lomi Nig'ho Qursee. Dhri Qetri Misah. M'shet Derar. Leyti Leyti.
+? Mitä tehdään aamulla? | Syödään aamiainen.
+? Mitä iltapäivällä? | Syödään lounas.
+? Mitä illalla? | Syödään illallinen.
+
+#READING Keittiössä
+Byati tesebiru. Hadish byati gezie. Manka habini. Farketa habini. Waga kendei iu?
+? Mikä on rikki? | Lautanen.
+? Mitä ostettiin? | Uusi lautanen.
+? Mitä kahta esinettä pyydetään? | Lusikka ja haarukka.
+? Mitä lopuksi kysytään? | Hintaa.
+
+#READING Värit
+Entay hibri eyu ezi? Tsaeda. Tselim. Qeyih. Semayawi. Qetelya. B'cha.
+? Mitä kysytään? | Minkä värinen tämä on.
+? Mikä on valkoinen tigrinyaksi? | Tsaeda.
+? Mikä on musta? | Tselim.
+? Mikä on punainen? | Qeyih.
+? Mikä on keltainen? | B'cha.
+
+#READING Kipu
+Dehan diki? Kebdey hamime. Risey hamime.
+? Mitä kysytään? | Oletko kunnossa.
+? Mihin sattuu ensin? | Vatsaan.
+? Mihin sattuu sen jälkeen? | Päähän.
+
+#READING Aistit
+Ayney mray abyuni. Ezney tsemime.
+? Mitä aistia puuttuu ensin? | Näkö (en näe).
+? Mitä aistia puuttuu toiseksi? | Kuulo (en kuule).
+
+#READING Viikonloppu
+Kgeyish eye. Sdray krieyom k'keyed eye. Ke'erif eye.
+? Mitä kolmea suunnitelmaa mainitaan? | Matkustan, menen perheen luo, lepään.
+? Kenen luona vieraillaan? | Perheen.
+
+#LISTENING Tapaaminen
+Selam. Biniam y-behal. Tisbuck leila.
+? Mikä nimi mainittiin? | Biniam.
+? Mitä lopuksi sanottiin? | Hauska tavata.
+
+#LISTENING Kuulumiset
+Kemey aleka? Ale-ku. Yekenqeley.
+? Mitä kysyttiin? | Mitä kuuluu.
+? Mitä vastattiin? | Voin hyvin, kiitos.
+
+#LISTENING Lautanen
+Abey alo eti byati? Ab kishine alo. Byati tesebiru.
+? Mitä etsitään? | Lautasta.
+? Missä se on? | Keittiössä.
+? Mikä sen kunto on? | Rikki.
+
+#LISTENING Pyynnöt
+Manka habini. Farketa habini. Kara habini.
+? Mitkä kolme esinettä pyydetään? | Lusikka, haarukka, veitsi.
+
+#LISTENING Päivät
+Lomi Qe'dam eyu. Ts'ba'h Sen-bet eyu.
+? Mikä päivä on tänään? | Lauantai.
+? Mikä päivä on huomenna? | Sunnuntai.
+
+#LISTENING Kello
+Seat shewate fikri. Seat shewaten isra.
+? Mitkä kaksi kellonaikaa kuulit? | 7.30 ja 7.20.
+
+#LISTENING Numerot
+Hade, Kil-te, Seleste, Arbate, Hamushte. Aserte hade, Aserte kil-te.
+? Mitkä numerot kuulit? | 1, 2, 3, 4, 5, sitten 11 ja 12.
+
+#LISTENING Perhe
+Adey, Aboy, Haftey, Hawey, Wedey, Gualey.
+? Mitkä perheenjäsenet kuulit? | Äiti, isä, sisko, veli, poika, tytär.
+
+#LISTENING Juomat
+Boon, Sha'hee, Mai, Tseba.
+? Mitkä juomat kuulit? | Kahvi, tee, vesi, maito.
+
+#LISTENING Kuukaudet
+Werhi Goon-bet. Werhi Seh-ne. Werhi T'k'mti.
+? Mitkä kolme kuukautta kuulit? | Toukokuu, kesäkuu, lokakuu.
+
+#LISTENING Ruokailu
+Entai alo zibelah? Kemey zerihu? Tu'um. Jeqatsel diu? Woo'uy.
+? Mitä kysyttiin ensin? | Mitä on syötäväksi.
+? Mitä ruoasta sanottiin? | Se on herkullista.
+? Onko se kuumaa? | Kyllä, kuumaa.
+
+#LISTENING Ikä ja syntymäpäivä
+Kindey eyu ametka? Wedi aserte amet eye. Werhi gunbet.
+? Mitä kysyttiin? | Ikää.
+? Mikä on vastaus? | Kymmenen vuotta.
+? Mikä kuukausi mainittiin? | Toukokuu.
+
+#LISTENING Värit
+Tsaeda, Tselim, Qeyih, Semayawi, Qetelya, B'cha, Bunawi.
+? Mitkä värit kuulit? | Valkoinen, musta, punainen, sininen, vihreä, keltainen, ruskea.
+
+#LISTENING Aistit
+Msma'a, Mray, Mshtat, Mstmekar, Mdhsas.
+? Mitkä aistit kuulit? | Kuulo, näkö, haju, maku, tunto.
+
+#LISTENING Kehonosat
+Ezni, Ayni, Afincha, Af, Eid, Egri.
+? Mitkä kehonosat kuulit? | Korva, silmä, nenä, suu, käsi, jalka.
+
+#LISTENING Vointi
+Dehan diki? Kebdey hamime. Risey hamime.
+? Mitä kysyttiin? | Oletko kunnossa.
+? Mihin sattuu? | Vatsaan ja päähän.
+
+#LISTENING Viikonloppu
+E'ze qedame senbet entay kitgebri eki? Ke'erif eye.
+? Mitä kysyttiin? | Mitä teet tänä viikonloppuna.
+? Mitä vastattiin? | Aion levätä.
+
+#LISTENING Työ
+Abey tiserhi? Ab bet timihirti yserih.
+? Mitä kysyttiin? | Missä työskentelet.
+? Mikä on vastaus? | Koulussa.
+
+#FIDEL He: ሀ | H2
+ሀ ሁ ሂ ሃ ሄ ህ ሆ | He Hu Hi Ha Hie H Ho
+word: ሃገር | Hager | maa
+word: ሃሩር | Harur | kuuma
+
+#FIDEL Le: ለ | H2
+ለ ሉ ሊ ላ ሌ ል ሎ | Le Lu Li La Lie L Lo
+word: ሎሚ | Lomi | tänään
+word: ለሚን | Lemin | sitruuna
+
+#FIDEL He (ሐ): ሐ | H2
+ሐ ሑ ሒ ሓ ሔ ሕ ሖ | He Hu Hi Ha Hie H Ho
+word: ሓርማዝ | Harmaz | norsu
+word: ሓጐስ | Hagos | ilo
+
+#FIDEL Me: መ | H2
+መ ሙ ሚ ማ ሜ ም ሞ | Me Mu Mi Ma Mie M Mo
+word: መኪና | Mekina | auto
+word: ምሳሕ | Msah | lounas
+
+#FIDEL Re: ረ | H2
+ረ ሩ ሪ ራ ሬ ር ሮ | Re Ru Ri Ra Rie R Ro
+word: ረቡዕ | Rebuh | keskiviikko
+word: ርጊቢት | Rgibit | lintu
+
+#FIDEL Se: ሰ | H3
+ሰ ሱ ሲ ሳ ሴ ስ ሶ | Se Su Si Sa Sie S So
+word: ሰዓት | Se'at | kello
+word: ሰሉስ | Selus | tiistai
+word: ሱሳ | Su'sa | kuusikymmentä
+
+#FIDEL She: ሸ | H3
+ሸ ሹ ሺ ሻ ሼ ሽ ሾ | She Shu Shi Sha Shie Sh Sho
+word: ሸበጥ | Shebeth | sandaali
+word: ሻሂ | Shahi | tee
+word: ሽሮ | Shiro | shiro
+
+#FIDEL Qe: ቀ | H3
+ቀ ቁ ቂ ቃ ቄ ቅ ቆ | Qe Qu Qi Qa Qie Q Qo
+word: ቀጠልያ | Qe'telia | vihreä
+word: ቆልዓ | Qol'a | lapsi
+word: ቀለም | Qe'lem | maali
+
+#FIDEL Be: በ | H3
+በ ቡ ቢ ባ ቤ ብ ቦ | Be Bu Bi Ba Bie B Bo
+word: በለስ | Be'les | kaktus
+word: በጊዕ | Be'gie | lammas
+word: ባቡር | Babur | juna
+
+#FIDEL Te: ተ | H3
+ተ ቱ ቲ ታ ቴ ት ቶ | Te Tu Ti Ta Tie T To
+word: ተመን | Temen | käärme
+word: ታሪኽ | Tarik | historia
+word: ቶርታ | Torta | kakku
+
+#FIDEL Che: ቸ | H3
+ቸ ቹ ቺ ቻ ቼ ች ቾ | Che Chu Chi Cha Chie Ch Cho
+word: ቻው | Chow | hei hei
+word: ችቸሮ | Chchero | stadion
+word: ቻይና | Chayna | Kiina
+
+#FIDEL Ne: ነ | H4
+ነ ኑ ኒ ና ኔ ን ኖ | Ne Nu Ni Na Nie N No
+word: ነብሪ | Nebri | tiikeri
+word: ነዊሕ | Newih | pitkä
+word: ነግራም | Negram | hankala ihminen, riidanhaastaja
+
+#FIDEL E: አ | H4
+አ ኡ ኢ ኣ ኤ እ ኦ | e u i a ie ee o
+word: ኣንበሳ | Anbesa | leijona
+word: ኣስመራ | Asmera | Asmara
+word: ኣቦ | Abo | isä
+
+#FIDEL Ke: ከ | H4
+ከ ኩ ኪ ካ ኬ ክ ኮ | Ke Ku Ki Ka Kie K Ko
+word: ከረን | Keren | Keren (kaupunki)
+word: ኩባያ | Kubaya | kuppi
+word: ካሮቲ | Caroti | porkkana
+
+#FIDEL Khe: ኸ | H4
+ኸ ኹ ኺ ኻ ኼ ኽ ኾ | Khe Khu Khi Kha Khie Kh Kho
+word: ኾኸብ | Khokob | tähti
+word: ሓሰኻ | Haseeka | madot
+word: እሾኽ | Eshokh | piikit
+
+#FIDEL We: ወ | H4
+ወ ዉ ዊ ዋ ዌ ው ዎ | We Wu Wi Wa Wie W Wo
+word: ወካርያ | Wekariya | hyeena
+word: ወርቂ | Werki | kulta
+word: ወይኒ | Weyni | viinirypäle
