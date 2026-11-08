@@ -1,35 +1,68 @@
+# Arkitigrinya
+
 A free mobile-friendly web app for practising everyday Tigrinya: vocabulary cards, quizzes, sentence building, reading and listening comprehension, and Fidel (Ge'ez script) practice.
 
-Open the app: https://girmsam-creator.github.io/Tigrinya-learning-app/
+**Open the app:** https://girmsam-creator.github.io/Tigrinya-learning-app/
 
 The interface is in Finnish. The content is Tigrinya (phonetic spelling and Ge'ez script) with Finnish translations.
 
-What is inside? 
+## What is inside
 
-Flashcards with a spaced repetition system (cards you miss come back more often)
-Quiz mode
-Sentence builder using patterns from the course handouts
-Reading comprehension texts
-Listening practice (read aloud by a partner or your own recording, since no audio is included)
-Fidel table and example words
+- Flashcards with a spaced repetition system (cards you miss come back more often)
+- Quiz mode
+- Mixed test (Koe tab): 10 to 60 multiple choice questions on words, sentences and conversations (no typing), with a score by category and a retry for mistakes
+- Conversation practice (Puhu tab): the app asks and you answer, you ask and check the model, or read whole dialogues
+- Sentence builder using patterns from the course handouts
+- Reading comprehension texts
+- Listening practice (read aloud by a partner or your own recording, since no audio is included)
+- Fidel table and example words (16 letter families)
 
 Your progress is saved only in your own browser on your own device. Nothing is sent anywhere.
 
-Add to your iPhone or Android home screen
-iPhone (Safari): Share, then Add to Home Screen
-Android (Chrome): Menu, then Add to Home screen
-Adding your own content
+## Add to your iPhone or Android home screen
 
-All content lives in content.txt. Edit it on GitHub (pencil icon), save with Commit changes, and the app picks up the new words and sentences after a few minutes. Reload the page to see them.
+- **iPhone (Safari):** Share, then Add to Home Screen
+- **Android (Chrome):** Menu, then Add to Home screen
 
+## Adding your own content
 
-Files
-index.html: the app
-README.md: this file
-SUPPORT.md: help and how to support the project
-Source and rights
+All content lives in `content.txt`. Edit it on GitHub (pencil icon), save with Commit changes, and the app picks up the new words and sentences after a few minutes. Reload the page to see them.
 
-Author
+```
+## My group | My list name
+phonetic | ge'ez (can be empty) | meaning
+Kubaya | ኩባያ | cup
+
+#SENTENCES
+Kubaya habini | give me a cup |
+
+#READING Title
+Text on one or more lines.
+? question | answer
+
+#LISTENING Title
+Text to be read aloud.
+? question | answer
+
+#CONVERSATION Title
+A: question | meaning
+B: answer | meaning
+```
+
+Lines starting with `//` are comments. Do not use the `|` character inside a word or sentence, because it separates the fields.
+
+## Files
+
+- `index.html`: the app
+- `content.txt`: all words, sentences, texts and Fidel data
+- `README.md`: this file
+- `SUPPORT.md`: help and how to support the project
+
+## Source and rights
+
+The vocabulary and phrases are based on Handouts 1 to 4 and the Class 4 conversation sheet of the course "Exploring with Selam & Senai, Tigrinya 101". Spellings are copied from the handouts, and spelling varies between handouts. The app is for personal study and is not an official product of the course. If you are a rights holder and have concerns, please contact the maintainer (see SUPPORT.md).
+
+## Author
 
 Made by Samuel Girmay, university teacher at Aalto University, as a personal learning project.
 
