@@ -15,7 +15,7 @@ The interface is in Finnish. The content is Tigrinya (phonetic spelling and Ge'e
 - Sentence builder using patterns from the course handouts
 - Reading comprehension texts
 - Listening practice (read aloud by a partner or your own recording, since no audio is included)
-- Fidel table and example words (16 letter families)
+- Fidel table and example words (21 letter families)
 
 Your progress is saved only in your own browser on your own device. Nothing is sent anywhere.
 
@@ -60,7 +60,7 @@ Lines starting with `//` are comments. Do not use the `|` character inside a wor
 
 ## Source and rights
 
-The vocabulary and phrases are based on Handouts 1 to 4 and the Class 4 conversation sheet of the course "Exploring with Selam & Senai, Tigrinya 101". Spellings are copied from the handouts, and spelling varies between handouts. The app is for personal study and is not an official product of the course. If you are a rights holder and have concerns, please contact the maintainer (see SUPPORT.md).
+The vocabulary and phrases are based on Handouts 1 to 5 and the Class 4 conversation sheet of the course "Exploring with Selam & Senai, Tigrinya 101". Spellings are copied from the handouts, and spelling varies between handouts. The app is for personal study and is not an official product of the course. If you are a rights holder and have concerns, please contact the maintainer (see SUPPORT.md).
 
 ## Author
 
