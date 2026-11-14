@@ -339,6 +339,31 @@ Dmu | ድሙ | kissa
 Manitle | ማንቲለ | kani
 Fe'res | ፈረስ | hevonen
 
+## Handout 6: liikenne ja ympäristö | Kulkuneuvot
+Mego'äzya | መጎዓዝያ | liikenne, kulkuneuvot
+Nefarit | ነፋሪት | lentokone
+Jalba | ጃልባ | vene
+Merkeb | መርከብ | laiva
+Makina | መኪና | auto
+Awtoboos | ኣውቶቡስ | bussi
+Bshkleta | ብሽክለታ | polkupyörä
+Babur | ባቡር | juna
+
+## Handout 6: liikenne ja ympäristö | Ympäristö ja infrastruktuuri
+tḧte q̈rxi | ትሕተ ቕርጺ | infrastruktuuri
+me'ärfo neferti | መዓርፎ ነፈርቲ | lentokenttä
+wedeb | ወደብ | satama
+xrgya | ጽርግያ | tie
+binto | ቢንቶ | silta
+hinsa | ህንጻ | rakennus
+Ayer | ኣየር | ilma
+Bahri | ባሕሪ | meri
+Gobo | ጎቦ | vuori
+Aqebet | ዓቐበት | kukkula
+Maebel | ማዕበል | vuorovesi, aallot
+Deset | ደሴት | saari
+gemgem baḧri | ገምገም ባሕሪ | ranta
+
 ## Valmiit lauseet: Handout 1 | Lauseet
 Selam |  | Hei
 Kemey aleki / aleka? |  | Mitä kuuluu? (naiselle / miehelle)
@@ -446,7 +471,7 @@ Kemay alowu qualoe? |  | Mitä lapsille kuuluu?
 Tsbuiclk alowu. Gobizom. |  | Heillä menee hyvin. He kasvavat.
 Btami nafikeki / nafikeka / nafinakum. |  | Kaipaamme sinua kovasti!
 
-## Handout 2-5: Fidel | Fidel-esimerkkisanat
+## Handout 2-6: Fidel | Fidel-esimerkkisanat
 Hager | ሃገር | maa
 Harur | ሃሩር | kuuma
 Lomi | ሎሚ | tänään
@@ -505,6 +530,22 @@ Jigna | ጅግና | sankari
 Gobiye | ጎቢየ | kilpikonna
 Gereb | ገረብ | puu
 Gemel | ገመል | kameli
+Tut | ጡጥ | puuvilla
+Tmyet | ጥሜት | nälkä
+Tebay | ጠባይ | käytös
+Chew | ጨው | suola
+Chihmi | ጭሕሚ | parta
+Chama | ጫማ | kengät
+Tseba | ጸባ | maito
+Tselim | ጸሊም | musta
+Tselot | ጸሎት | rukous
+Tseguri | ጸጉሪ | hius
+Feres | ፈረስ | hevonen
+Fiyori | ፍዮሪ | kukka
+Fanus | ፋኑስ | lamppu
+Piro | ፒሮ | kynä
+Plastik | ፕላስቲክ | muovi
+Polis | ፖሊስ | poliisi
 
 #SENTENCES
 Selam | Hei | H1
@@ -576,88 +617,92 @@ Tsibuck alowu. | Heillä menee hyvin. | H5
 Dehan alowu. | Heillä menee ihan hyvin. | H5
 Kemay alowu qualoe? | Mitä lapsille kuuluu? | H5
 Tsbuiclk alowu. Gobizom. | Heillä menee hyvin. He kasvavat. | H5
-Farketa habini. | Anna minulle haarukka. | H1-5
-Kubaya habini. | Anna minulle kuppi. | H1-5
-Kara habini. | Anna minulle veitsi. | H1-5
-Mai habini. | Anna minulle vesi. | H1-5
-Boon habini. | Anna minulle kahvi. | H1-5
-Sha'hee habini. | Anna minulle tee. | H1-5
-Bani habini. | Anna minulle leipä. | H1-5
-Tseba habini. | Anna minulle maito. | H1-5
-Gofley habini. | Anna minulle villapaitani. | H1-5
-Kalsey habini. | Anna minulle sukkani. | H1-5
-Abey alo eti manka? | Missä lusikka on? | H1-5
-Abey alo eti farketa? | Missä haarukka on? | H1-5
-Abey alo eti kubaya? | Missä kuppi on? | H1-5
-Abey alo eti berad? | Missä teekannu on? | H1-5
-Abey alo eti dsti? | Missä kattila on? | H1-5
-Abey alo eti badela? | Missä paistinpannu on? | H1-5
-Abey alo eti mesob? | Missä injera-kori on? | H1-5
-Kubaya tesebiru. | Kuppi on rikki. | H1-5
-Berad tesebiru. | Teekannu on rikki. | H1-5
-Manka tesebiru. | Lusikka on rikki. | H1-5
-Dsti tesebiru. | Kattila on rikki. | H1-5
-Mesob tesebiru. | Injera-kori on rikki. | H1-5
-Hadish manka gezie. | Ostin uuden lusikan. | H1-5
-Hadish kubaya gezie. | Ostin uuden kupin. | H1-5
-Hadish dsti gezie. | Ostin uuden kattilan. | H1-5
-Hadish berad gezie. | Ostin uuden teekannun. | H1-5
-Hadish kara gezie. | Ostin uuden veitsen. | H1-5
-Lomi Se-nuy eyu. | Tänään on maanantai. | H1-5
-Lomi Se-lus eyu. | Tänään on tiistai. | H1-5
-Lomi Reb-o'h eyu. | Tänään on keskiviikko. | H1-5
-Lomi Ah'rbee eyu. | Tänään on perjantai. | H1-5
-Lomi Qe'dam eyu. | Tänään on lauantai. | H1-5
-Lomi Sen-bet eyu. | Tänään on sunnuntai. | H1-5
-Ts'ba'h Se-nuy eyu. | Huomenna on maanantai. | H1-5
-Ts'ba'h Reb-o'h eyu. | Huomenna on keskiviikko. | H1-5
-Ts'ba'h Ha'moos eyu. | Huomenna on torstai. | H1-5
-Ts'ba'h Sen-bet eyu. | Huomenna on sunnuntai. | H1-5
-Werhi T'ri. | Kuukausi on tammikuu. | H1-5
-Werhi Mega-beet. | Kuukausi on maaliskuu. | H1-5
-Werhi Seh-ne. | Kuukausi on kesäkuu. | H1-5
-Werhi Nehase. | Kuukausi on elokuu. | H1-5
-Werhi Mes-ke-rem. | Kuukausi on syyskuu. | H1-5
-Werhi H'dar. | Kuukausi on marraskuu. | H1-5
-Werhi Tah'sas. | Kuukausi on joulukuu. | H1-5
-Seat Kil-te koynu. | Kello on kaksi. | H1-5
-Seat Seleste koynu. | Kello on kolme. | H1-5
-Seat Arbate koynu. | Kello on neljä. | H1-5
-Seat Hamushte koynu. | Kello on viisi. | H1-5
-Seat Shudushte koynu. | Kello on kuusi. | H1-5
-Seat Aserte koynu. | Kello on kymmenen. | H1-5
-Ab Helsinki y-nebir. | Asun paikassa Helsinki. | H1-5
-Ab Espoo y-nebir. | Asun paikassa Espoo. | H1-5
-Ab Asmara y-nebir. | Asun paikassa Asmara. | H1-5
-Ab Geza y-nebir. | Asun paikassa kotona. | H1-5
-Simon y-behal. | Nimeni on Simon. | H1-5
-Biniam y-behal. | Nimeni on Biniam. | H1-5
-Samuel y-behal. | Nimeni on Samuel. | H1-5
-Adey Maria t-behal. | Äitini nimi on Maria. | H1-5
-Adey Selam t-behal. | Äitini nimi on Selam. | H1-5
-Adey ab geza ala. | Äitini on kotona. | H1-5
-Aboy ab geza alo. | Isäni on kotona. | H1-5
-Hawey ab geza alo. | Veljeni on kotona. | H1-5
-Haftey ab geza ala. | Siskoni on kotona. | H1-5
-Adey ab kishine ala. | Äitini on keittiössä. | H1-5
-Aboy ab kishine alo. | Isäni on keittiössä. | H1-5
-Ab Asmera abye. | Kasvoin paikassa Asmara. | H1-5
-Ab Keren abye. | Kasvoin paikassa Keren. | H1-5
-Ab Helsinki abye. | Kasvoin paikassa Helsinki. | H1-5
-Aboy Daniel yibehal. | Isäni nimi on Daniel. | H1-5
-Aboy Biniam yibehal. | Isäni nimi on Biniam. | H1-5
-Entay hibri eyu ezi? Tsaeda. | Minkä värinen tämä on? Valkoinen. | H1-5
-Entay hibri eyu ezi? Tselim. | Minkä värinen tämä on? Musta. | H1-5
-Entay hibri eyu ezi? Qeyih. | Minkä värinen tämä on? Punainen. | H1-5
-Entay hibri eyu ezi? Semayawi. | Minkä värinen tämä on? Sininen. | H1-5
-Entay hibri eyu ezi? Qetelya. | Minkä värinen tämä on? Vihreä. | H1-5
-Entay hibri eyu ezi? B'cha. | Minkä värinen tämä on? Keltainen. | H1-5
-Entay hibri eyu ezi? Bunawi. | Minkä värinen tämä on? Ruskea. | H1-5
-Entay hibri eyu ezi? Aranshoni. | Minkä värinen tämä on? Oranssi. | H1-5
-Kalsey, abey alo? | Missä sukkani on? | H1-5
-Gofley, abey alo? | Missä villapaitani on? | H1-5
-A'sa tium eyu. | Kala on hyvää. | H1-5
-Derho tium eyu. | Kana on hyvää. | H1-5
+Farketa habini. | Anna minulle haarukka. | H1-6
+Kubaya habini. | Anna minulle kuppi. | H1-6
+Kara habini. | Anna minulle veitsi. | H1-6
+Mai habini. | Anna minulle vesi. | H1-6
+Boon habini. | Anna minulle kahvi. | H1-6
+Sha'hee habini. | Anna minulle tee. | H1-6
+Bani habini. | Anna minulle leipä. | H1-6
+Tseba habini. | Anna minulle maito. | H1-6
+Gofley habini. | Anna minulle villapaitani. | H1-6
+Kalsey habini. | Anna minulle sukkani. | H1-6
+Abey alo eti manka? | Missä lusikka on? | H1-6
+Abey alo eti farketa? | Missä haarukka on? | H1-6
+Abey alo eti kubaya? | Missä kuppi on? | H1-6
+Abey alo eti berad? | Missä teekannu on? | H1-6
+Abey alo eti dsti? | Missä kattila on? | H1-6
+Abey alo eti badela? | Missä paistinpannu on? | H1-6
+Abey alo eti mesob? | Missä injera-kori on? | H1-6
+Kubaya tesebiru. | Kuppi on rikki. | H1-6
+Berad tesebiru. | Teekannu on rikki. | H1-6
+Manka tesebiru. | Lusikka on rikki. | H1-6
+Dsti tesebiru. | Kattila on rikki. | H1-6
+Mesob tesebiru. | Injera-kori on rikki. | H1-6
+Hadish manka gezie. | Ostin uuden lusikan. | H1-6
+Hadish kubaya gezie. | Ostin uuden kupin. | H1-6
+Hadish dsti gezie. | Ostin uuden kattilan. | H1-6
+Hadish berad gezie. | Ostin uuden teekannun. | H1-6
+Hadish kara gezie. | Ostin uuden veitsen. | H1-6
+Lomi Se-nuy eyu. | Tänään on maanantai. | H1-6
+Lomi Se-lus eyu. | Tänään on tiistai. | H1-6
+Lomi Reb-o'h eyu. | Tänään on keskiviikko. | H1-6
+Lomi Ah'rbee eyu. | Tänään on perjantai. | H1-6
+Lomi Qe'dam eyu. | Tänään on lauantai. | H1-6
+Lomi Sen-bet eyu. | Tänään on sunnuntai. | H1-6
+Ts'ba'h Se-nuy eyu. | Huomenna on maanantai. | H1-6
+Ts'ba'h Reb-o'h eyu. | Huomenna on keskiviikko. | H1-6
+Ts'ba'h Ha'moos eyu. | Huomenna on torstai. | H1-6
+Ts'ba'h Sen-bet eyu. | Huomenna on sunnuntai. | H1-6
+Werhi T'ri. | Kuukausi on tammikuu. | H1-6
+Werhi Mega-beet. | Kuukausi on maaliskuu. | H1-6
+Werhi Seh-ne. | Kuukausi on kesäkuu. | H1-6
+Werhi Nehase. | Kuukausi on elokuu. | H1-6
+Werhi Mes-ke-rem. | Kuukausi on syyskuu. | H1-6
+Werhi H'dar. | Kuukausi on marraskuu. | H1-6
+Werhi Tah'sas. | Kuukausi on joulukuu. | H1-6
+Seat Kil-te koynu. | Kello on kaksi. | H1-6
+Seat Seleste koynu. | Kello on kolme. | H1-6
+Seat Arbate koynu. | Kello on neljä. | H1-6
+Seat Hamushte koynu. | Kello on viisi. | H1-6
+Seat Shudushte koynu. | Kello on kuusi. | H1-6
+Seat Aserte koynu. | Kello on kymmenen. | H1-6
+Ab Helsinki y-nebir. | Asun paikassa Helsinki. | H1-6
+Ab Espoo y-nebir. | Asun paikassa Espoo. | H1-6
+Ab Asmara y-nebir. | Asun paikassa Asmara. | H1-6
+Ab Geza y-nebir. | Asun paikassa kotona. | H1-6
+Simon y-behal. | Nimeni on Simon. | H1-6
+Biniam y-behal. | Nimeni on Biniam. | H1-6
+Samuel y-behal. | Nimeni on Samuel. | H1-6
+Adey Maria t-behal. | Äitini nimi on Maria. | H1-6
+Adey Selam t-behal. | Äitini nimi on Selam. | H1-6
+Adey ab geza ala. | Äitini on kotona. | H1-6
+Aboy ab geza alo. | Isäni on kotona. | H1-6
+Hawey ab geza alo. | Veljeni on kotona. | H1-6
+Haftey ab geza ala. | Siskoni on kotona. | H1-6
+Adey ab kishine ala. | Äitini on keittiössä. | H1-6
+Aboy ab kishine alo. | Isäni on keittiössä. | H1-6
+Ab Asmera abye. | Kasvoin paikassa Asmara. | H1-6
+Ab Keren abye. | Kasvoin paikassa Keren. | H1-6
+Ab Helsinki abye. | Kasvoin paikassa Helsinki. | H1-6
+Aboy Daniel yibehal. | Isäni nimi on Daniel. | H1-6
+Aboy Biniam yibehal. | Isäni nimi on Biniam. | H1-6
+Entay hibri eyu ezi? Tsaeda. | Minkä värinen tämä on? Valkoinen. | H1-6
+Entay hibri eyu ezi? Tselim. | Minkä värinen tämä on? Musta. | H1-6
+Entay hibri eyu ezi? Qeyih. | Minkä värinen tämä on? Punainen. | H1-6
+Entay hibri eyu ezi? Semayawi. | Minkä värinen tämä on? Sininen. | H1-6
+Entay hibri eyu ezi? Qetelya. | Minkä värinen tämä on? Vihreä. | H1-6
+Entay hibri eyu ezi? B'cha. | Minkä värinen tämä on? Keltainen. | H1-6
+Entay hibri eyu ezi? Bunawi. | Minkä värinen tämä on? Ruskea. | H1-6
+Entay hibri eyu ezi? Aranshoni. | Minkä värinen tämä on? Oranssi. | H1-6
+Kalsey, abey alo? | Missä sukkani on? | H1-6
+Gofley, abey alo? | Missä villapaitani on? | H1-6
+A'sa tium eyu. | Kala on hyvää. | H1-6
+Derho tium eyu. | Kana on hyvää. | H1-6
+Abey alo eti makina? | Missä auto on? | H1-6
+Abey alo eti awtoboos? | Missä bussi on? | H1-6
+Abey alo eti bshkleta? | Missä polkupyörä on? | H1-6
+Abey alo eti babur? | Missä juna on? | H1-6
 
 #READING Esittely
 Selam. Simon y-behal. Ab Helsinki y-nebir. Adey Maria t-behal. Aboy Daniel y-behal. Klite ah'wat aloni.
@@ -773,6 +818,23 @@ Kemay alowu sidra? Tsibuck alowu. Kemay alowu qualoe? Tsbuiclk alowu. Gobizom.
 ? Kenestä kysytään toiseksi? | Lapsista.
 ? Mitä lapsista sanotaan? | He kasvavat.
 
+#READING Kulkuneuvot
+Makina. Awtoboos. Bshkleta. Babur. Nefarit. Jalba. Merkeb.
+? Mitkä maakulkuneuvot mainitaan? | Auto, bussi, polkupyörä ja juna.
+? Mikä on ensimmäinen sana? | Makina (auto).
+? Mikä on lentokone? | Nefarit.
+
+#READING Missä auto
+Abey alo eti makina? Ab geza alo.
+? Mitä etsitään? | Autoa.
+? Missä se on? | Kotona.
+
+#READING Ympäristö
+Gobo. Bahri. Deset. Gemgem baḧri. Binto.
+? Mitkä kaksi vesiin liittyvää sanaa mainitaan? | Meri ja ranta.
+? Mikä sana tarkoittaa saarta? | Deset.
+? Mikä sana tarkoittaa siltaa? | Binto.
+
 #LISTENING Tapaaminen
 Selam. Biniam y-behal. Tisbuck leila.
 ? Mikä nimi mainittiin? | Biniam.
@@ -874,6 +936,18 @@ Kemay alowu sidra? Tsibuck alowu. Kemay alowu qualoe?
 ? Mitä kysyttiin ensin? | Mitä perheelle kuuluu.
 ? Mitä vastattiin? | Heillä menee hyvin.
 ? Mitä kysyttiin lopuksi? | Mitä lapsille kuuluu.
+
+#LISTENING Kulkuneuvot
+Makina, Awtoboos, Bshkleta, Babur, Nefarit.
+? Mitkä kulkuneuvot kuulit? | Auto, bussi, polkupyörä, juna, lentokone.
+
+#LISTENING Vesi ja maa
+Jalba, Merkeb, Wedeb, Bahri, Deset.
+? Mitkä sanat kuulit? | Vene, laiva, satama, meri, saari.
+
+#LISTENING Paikat
+Me'ärfo neferti, Xrgya, Binto, Hinsa, Gobo.
+? Mitkä paikat kuulit? | Lentokenttä, tie, silta, rakennus, vuori.
 
 #CONVERSATION Tapaaminen
 A: Selam. Kemey aleka? | Hei. Mitä kuuluu?
@@ -1201,6 +1275,14 @@ B: A'sa tium eyu. | Kala on hyvää.
 A: Entay k'tgebri eki lomanti? | Mitä teet tänään?
 B: Ke'erif eye. | Aion levätä.
 
+#CONVERSATION Missä auto
+A: Abey alo eti makina? | Missä auto on?
+B: Ab geza alo. | Kotona.
+
+#CONVERSATION Missä bussi
+A: Abey alo eti awtoboos? | Missä bussi on?
+B: Ab geza alo. | Kotona.
+
 #FIDEL He: ሀ | H2
 ሀ ሁ ሂ ሃ ሄ ህ ሆ | He Hu Hi Ha Hie H Ho
 word: ሃገር | Hager | maa
@@ -1321,3 +1403,34 @@ word: ጅግና | Jigna | sankari
 word: ጎቢየ | Gobiye | kilpikonna
 word: ገረብ | Gereb | puu
 word: ገመል | Gemel | kameli
+
+#FIDEL The: ጠ | H6
+ጠ ጡ ጢ ጣ ጤ ጥ ጦ | The Thu Thi Tha Thie Th Tho
+word: ጡጥ | Tut | puuvilla
+word: ጥሜት | Tmyet | nälkä
+word: ጠባይ | Tebay | käytös
+
+#FIDEL Che (ጨ): ጨ | H6
+ጨ ጩ ጪ ጫ ጬ ጭ ጮ | Che Chu Chi Cha Chie Ch Cho
+word: ጨው | Chew | suola
+word: ጭሕሚ | Chihmi | parta
+word: ጫማ | Chama | kengät
+
+#FIDEL Tse: ጸ | H6
+ጸ ጹ ጺ ጻ ጼ ጽ ጾ | Tse Tsu Tsi Tsa Tsie Ts Tso
+word: ጸባ | Tseba | maito
+word: ጸሊም | Tselim | musta
+word: ጸሎት | Tselot | rukous
+word: ጸጉሪ | Tseguri | hius
+
+#FIDEL Fe: ፈ | H6
+ፈ ፉ ፊ ፋ ፌ ፍ ፎ | Fe Fu Fi Fa Fie F Fo
+word: ፈረስ | Feres | hevonen
+word: ፍዮሪ | Fiyori | kukka
+word: ፋኑስ | Fanus | lamppu
+
+#FIDEL Pe: ፐ | H6
+ፐ ፑ ፒ ፓ ፔ ፕ ፖ | Pe Pu Pi Pa Pie P Po
+word: ፒሮ | Piro | kynä
+word: ፕላስቲክ | Plastik | muovi
+word: ፖሊስ | Polis | poliisi
