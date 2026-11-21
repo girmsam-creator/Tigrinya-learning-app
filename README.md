@@ -1,6 +1,6 @@
 # Arkitigrinya
 
-A free mobile-friendly web app for practising everyday Tigrinya: vocabulary cards, quizzes, sentence building, reading and listening comprehension, and Fidel (Ge'ez script) practice.
+A free mobile-friendly web app for practising everyday Tigrinya: vocabulary cards, quizzes, sentence building, reading and listening comprehension, tables of all words and sentences, and Fidel (Ge'ez script) practice.
 
 **Open the app:** https://girmsam-creator.github.io/Tigrinya-learning-app/
 
@@ -10,12 +10,12 @@ The interface is in Finnish. The content is Tigrinya (phonetic spelling and Ge'e
 
 - Flashcards with a spaced repetition system (cards you miss come back more often)
 - Quiz mode
-- Mixed test (Koe tab): 10 to 60 multiple choice questions on words, sentences and conversations (no typing), with a score by category and a retry for mistakes
+- Mixed test (Koe tab): first choose one or more handouts (Handout 1 to 7, Class 4 conversations, your own additions), then one or more question types (words, sentences, conversations). 10 to 60 multiple choice questions (no typing), with a score by category and a retry for mistakes. In content.txt you can tag your own conversations with a handout, for example `#CONVERSATION Title | H3`, and sentences with `ph | fi | H3`
 - Conversation practice (Puhu tab): the app asks and you answer, you ask and check the model, or read whole dialogues
 - Sentence builder using patterns from the course handouts
 - Reading comprehension texts
 - Listening practice (read aloud by a partner or your own recording, since no audio is included)
-- Fidel table and example words (26 letter families)
+- Tables tab (Taulukot): every word, sentence and conversation listed by handout like in the handouts (Finnish, pronunciation, Ge'ez), with search, filters by type, and a Hide option for self-testing (tap a row to reveal it). The Fidel table (26 letter families) and Fidel quiz are under the chip Fidel-kirjaimet
 
 Your progress is saved only in your own browser on your own device. Nothing is sent anywhere.
 
@@ -60,7 +60,7 @@ Lines starting with `//` are comments. Do not use the `|` character inside a wor
 
 ## Source and rights
 
-The vocabulary and phrases are based on Handouts 1 to 6 and the Class 4 conversation sheet of the course "Exploring with Selam & Senai, Tigrinya 101". Spellings are copied from the handouts, and spelling varies between handouts. The app is for personal study and is not an official product of the course. If you are a rights holder and have concerns, please contact the maintainer (see SUPPORT.md).
+The vocabulary and phrases are based on Handouts 1 to 7 and the Class 4 conversation sheet of the course "Exploring with Selam & Senai, Tigrinya 101". Spellings are copied from the handouts, and spelling varies between handouts. The app is for personal study and is not an official product of the course. If you are a rights holder and have concerns, please contact the maintainer (see SUPPORT.md).
 
 ## Author
 

@@ -2,7 +2,7 @@
 // Sanalistat: ## Ryhmä | Listan nimi, sitten rivit: foneettinen | ge'ez (voi olla tyhjä) | suomeksi
 // Lauseet: #SENTENCES, sitten rivit: tigrinya foneettisesti | suomeksi
 // Luetun ja kuullun tekstit: #READING Otsikko tai #LISTENING Otsikko, teksti riveillä, kysymykset muodossa: ? kysymys | vastaus
-// Keskustelut: #CONVERSATION Otsikko, sitten rivit: A: tigrinya | suomeksi ja B: tigrinya | suomeksi (vuorotellen, vähintään kaksi riviä)
+// Keskustelut: #CONVERSATION Otsikko | H3 (H3 = mistä handoutista, valinnainen), sitten rivit: A: tigrinya | suomeksi ja B: tigrinya | suomeksi (vuorotellen, vähintään kaksi riviä)
 // Fidel: #FIDEL Nimi | lähde, sitten rivi ge'ez-kirjaimista (7 kpl, välilyönnillä), rivi foneettisista (7 kpl), ja rivit: word: ge'ez | foneettinen | suomeksi
 // Rivit jotka alkavat // ovat kommentteja.
 
@@ -364,6 +364,32 @@ Maebel | ማዕበል | vuorovesi, aallot
 Deset | ደሴት | saari
 gemgem baḧri | ገምገም ባሕሪ | ranta
 
+## Handout 7: ilmaukset ja kysymyssanat | Kysymyssanat
+Men | መን | kuka
+Entay | እንታይ | mikä, mitä
+Meas | መዓስ | milloin
+Abey | ኣበይ | missä
+Nimintay / Slemintay | ንምንታይ / ስለምንታይ | miksi
+Kemey | ከመይ | miten
+Kindey | ክንደይ | kuinka monta, paljonko
+## Handout 7: ilmaukset ja kysymyssanat | Ilmaukset
+Temiye | ጠምየ | minulla on nälkä
+Tsemiye | ጸሚአ | minulla on jano
+Dekisi / Dekis | ደቅሲ / ደቅስ | mene nukkumaan! (naiselle / miehelle)
+Tese'i / Tese' | ተሰኢ / ተሳእ | herää! (naiselle / miehelle)
+Beli / Bela | ብልዒ / ብላዕ | syö! (naiselle / miehelle)
+Neyi / Naya | ነዪ / ናያ | tule tänne! (naiselle / miehelle)
+Bejaki / Bejaka | በጃኺ / በጃኻ | ole hyvä (naiselle / miehelle)
+Yiqreta | ይቕሬታ | anteeksi
+Nafiqeki / Nafiqeka | ናፊቐኪ / ናፊቐካ | kaipaan sinua (naiselle / miehelle)
+Yefetweki eye / Yefetweka eye | የፍቅረኪ እየ / የፍቅረካ እየ | rakastan sinua (naiselle / miehelle)
+Ayteredaanin | ኣይተረድኣንን | en ymmärrä
+Merhaba | መርሓባ | tervetuloa
+Ewe | እወ | kyllä
+Qursi | ቁርሲ | aamiainen
+Misaḥ | ምሳሕ | lounas
+Drar | ድራር | illallinen
+
 ## Valmiit lauseet: Handout 1 | Lauseet
 Selam |  | Hei
 Kemey aleki / aleka? |  | Mitä kuuluu? (naiselle / miehelle)
@@ -471,7 +497,43 @@ Kemay alowu qualoe? |  | Mitä lapsille kuuluu?
 Tsbuiclk alowu. Gobizom. |  | Heillä menee hyvin. He kasvavat.
 Btami nafikeki / nafikeka / nafinakum. |  | Kaipaamme sinua kovasti!
 
-## Handout 2-6: Fidel | Fidel-esimerkkisanat
+## Valmiit lauseet: Handout 7 | Lauseet
+Men iki / ika? |  | Kuka sinä olet?
+Men shimki / shimka? |  | Mikä sinun nimesi on?
+Men shima adeki / adeka? |  | Mikä äitisi nimi on?
+Men dewilu / dewila? |  | Kuka soitti?
+Men geyruwo ezi? |  | Kuka teki tämän?
+Entay iyu qursi? |  | Mitä on aamiaiseksi?
+Drar entay iyu? |  | Mitä on illalliseksi?
+Misaḥ entay beliki / belika? |  | Mitä söit lounaaksi?
+Entay koynki / koynka? |  | Mikä hätänä?
+Entay deliki / delika? |  | Mitä haluat?
+Meas iki / ika timetsi? |  | Milloin tulet?
+Meas beli'ki / beli'ka? |  | Milloin söit?
+Meas dekiski / dekiska? |  | Milloin menit nukkumaan?
+Meas iyu qursi? |  | Milloin on aamiainen?
+Meas iyu melidi-ki / melidi-ka? |  | Milloin on syntymäpäiväsi?
+Abey aloki / aloka? |  | Missä olet?
+Abey tinebri / tinebir? |  | Missä asut?
+Abey iyu bet timhirtiki / timhirtika? |  | Missä koulusi on?
+Abey alo aboki / aboka? |  | Missä isäsi on?
+Abey alo mayey? |  | Missä minun vetini on?
+Nimintay ezi gerkiyo / gerkayo? |  | Miksi teit tämän?
+Nimintay kemzi ilki / ilka? |  | Miksi sanoit noin?
+Nimintay de'a dekiski / dekiska? |  | Miksi menit nukkumaan?
+Kemey aloki / aloka? |  | Mitä kuuluu?
+Haftiki / haftika kemey ala? |  | Mitä siskollesi kuuluu?
+Siraḥ kemey alo? |  | Miten työ sujuu?
+Timhirti kemey alo? |  | Miten koulu sujuu?
+Sidra kemey alewu? |  | Mitä perheellesi kuuluu?
+Kemey hadirki / hadirka? |  | Hyvää huomenta!
+Kemey wi'ilki / wi'ilka? |  | Millainen päiväsi oli?
+Kemey amsiki / amsika? |  | Hyvää iltaa!
+Kindey ametki / ametka? |  | Minkä ikäinen olet?
+Kindey me'alti alewa ab semun? |  | Montako päivää viikossa on?
+Kindey enqoqho gerki / gerka? |  | Montako munaa käytit?
+
+## Handout 2: Fidel | Fidel-esimerkkisanat
 Hager | ሃገር | maa
 Harur | ሃሩር | kuuma
 Lomi | ሎሚ | tänään
@@ -482,6 +544,8 @@ Mekina | መኪና | auto
 Msah | ምሳሕ | lounas
 Rebuh | ረቡዕ | keskiviikko
 Rgibit | ርጊቢት | lintu
+
+## Handout 3: Fidel | Fidel-esimerkkisanat
 Se'at | ሰዓት | kello
 Selus | ሰሉስ | tiistai
 Su'sa | ሱሳ | kuusikymmentä
@@ -500,6 +564,8 @@ Torta | ቶርታ | kakku
 Chow | ቻው | hei hei
 Chchero | ችቸሮ | stadion
 Chayna | ቻይና | Kiina
+
+## Handout 4: Fidel | Fidel-esimerkkisanat
 Nebri | ነብሪ | tiikeri
 Newih | ነዊሕ | pitkä
 Negram | ነግራም | hankala ihminen, riidanhaastaja
@@ -515,6 +581,8 @@ Eshokh | እሾኽ | piikit
 Wekariya | ወካርያ | hyeena
 Werki | ወርቂ | kulta
 Weyni | ወይኒ | viinirypäle
+
+## Handout 5: Fidel | Fidel-esimerkkisanat
 Zemed | ዘመድ | sukulainen
 Zuria | ዙሪያ | kulttuuriasu
 Zena | ዜና | uutiset
@@ -530,6 +598,8 @@ Jigna | ጅግና | sankari
 Gobiye | ጎቢየ | kilpikonna
 Gereb | ገረብ | puu
 Gemel | ገመል | kameli
+
+## Handout 6: Fidel | Fidel-esimerkkisanat
 Tut | ጡጥ | puuvilla
 Tmyet | ጥሜት | nälkä
 Tebay | ጠባይ | käytös
@@ -617,92 +687,127 @@ Tsibuck alowu. | Heillä menee hyvin. | H5
 Dehan alowu. | Heillä menee ihan hyvin. | H5
 Kemay alowu qualoe? | Mitä lapsille kuuluu? | H5
 Tsbuiclk alowu. Gobizom. | Heillä menee hyvin. He kasvavat. | H5
-Farketa habini. | Anna minulle haarukka. | H1-6
-Kubaya habini. | Anna minulle kuppi. | H1-6
-Kara habini. | Anna minulle veitsi. | H1-6
-Mai habini. | Anna minulle vesi. | H1-6
-Boon habini. | Anna minulle kahvi. | H1-6
-Sha'hee habini. | Anna minulle tee. | H1-6
-Bani habini. | Anna minulle leipä. | H1-6
-Tseba habini. | Anna minulle maito. | H1-6
-Gofley habini. | Anna minulle villapaitani. | H1-6
-Kalsey habini. | Anna minulle sukkani. | H1-6
-Abey alo eti manka? | Missä lusikka on? | H1-6
-Abey alo eti farketa? | Missä haarukka on? | H1-6
-Abey alo eti kubaya? | Missä kuppi on? | H1-6
-Abey alo eti berad? | Missä teekannu on? | H1-6
-Abey alo eti dsti? | Missä kattila on? | H1-6
-Abey alo eti badela? | Missä paistinpannu on? | H1-6
-Abey alo eti mesob? | Missä injera-kori on? | H1-6
-Kubaya tesebiru. | Kuppi on rikki. | H1-6
-Berad tesebiru. | Teekannu on rikki. | H1-6
-Manka tesebiru. | Lusikka on rikki. | H1-6
-Dsti tesebiru. | Kattila on rikki. | H1-6
-Mesob tesebiru. | Injera-kori on rikki. | H1-6
-Hadish manka gezie. | Ostin uuden lusikan. | H1-6
-Hadish kubaya gezie. | Ostin uuden kupin. | H1-6
-Hadish dsti gezie. | Ostin uuden kattilan. | H1-6
-Hadish berad gezie. | Ostin uuden teekannun. | H1-6
-Hadish kara gezie. | Ostin uuden veitsen. | H1-6
-Lomi Se-nuy eyu. | Tänään on maanantai. | H1-6
-Lomi Se-lus eyu. | Tänään on tiistai. | H1-6
-Lomi Reb-o'h eyu. | Tänään on keskiviikko. | H1-6
-Lomi Ah'rbee eyu. | Tänään on perjantai. | H1-6
-Lomi Qe'dam eyu. | Tänään on lauantai. | H1-6
-Lomi Sen-bet eyu. | Tänään on sunnuntai. | H1-6
-Ts'ba'h Se-nuy eyu. | Huomenna on maanantai. | H1-6
-Ts'ba'h Reb-o'h eyu. | Huomenna on keskiviikko. | H1-6
-Ts'ba'h Ha'moos eyu. | Huomenna on torstai. | H1-6
-Ts'ba'h Sen-bet eyu. | Huomenna on sunnuntai. | H1-6
-Werhi T'ri. | Kuukausi on tammikuu. | H1-6
-Werhi Mega-beet. | Kuukausi on maaliskuu. | H1-6
-Werhi Seh-ne. | Kuukausi on kesäkuu. | H1-6
-Werhi Nehase. | Kuukausi on elokuu. | H1-6
-Werhi Mes-ke-rem. | Kuukausi on syyskuu. | H1-6
-Werhi H'dar. | Kuukausi on marraskuu. | H1-6
-Werhi Tah'sas. | Kuukausi on joulukuu. | H1-6
-Seat Kil-te koynu. | Kello on kaksi. | H1-6
-Seat Seleste koynu. | Kello on kolme. | H1-6
-Seat Arbate koynu. | Kello on neljä. | H1-6
-Seat Hamushte koynu. | Kello on viisi. | H1-6
-Seat Shudushte koynu. | Kello on kuusi. | H1-6
-Seat Aserte koynu. | Kello on kymmenen. | H1-6
-Ab Helsinki y-nebir. | Asun paikassa Helsinki. | H1-6
-Ab Espoo y-nebir. | Asun paikassa Espoo. | H1-6
-Ab Asmara y-nebir. | Asun paikassa Asmara. | H1-6
-Ab Geza y-nebir. | Asun paikassa kotona. | H1-6
-Simon y-behal. | Nimeni on Simon. | H1-6
-Biniam y-behal. | Nimeni on Biniam. | H1-6
-Samuel y-behal. | Nimeni on Samuel. | H1-6
-Adey Maria t-behal. | Äitini nimi on Maria. | H1-6
-Adey Selam t-behal. | Äitini nimi on Selam. | H1-6
-Adey ab geza ala. | Äitini on kotona. | H1-6
-Aboy ab geza alo. | Isäni on kotona. | H1-6
-Hawey ab geza alo. | Veljeni on kotona. | H1-6
-Haftey ab geza ala. | Siskoni on kotona. | H1-6
-Adey ab kishine ala. | Äitini on keittiössä. | H1-6
-Aboy ab kishine alo. | Isäni on keittiössä. | H1-6
-Ab Asmera abye. | Kasvoin paikassa Asmara. | H1-6
-Ab Keren abye. | Kasvoin paikassa Keren. | H1-6
-Ab Helsinki abye. | Kasvoin paikassa Helsinki. | H1-6
-Aboy Daniel yibehal. | Isäni nimi on Daniel. | H1-6
-Aboy Biniam yibehal. | Isäni nimi on Biniam. | H1-6
-Entay hibri eyu ezi? Tsaeda. | Minkä värinen tämä on? Valkoinen. | H1-6
-Entay hibri eyu ezi? Tselim. | Minkä värinen tämä on? Musta. | H1-6
-Entay hibri eyu ezi? Qeyih. | Minkä värinen tämä on? Punainen. | H1-6
-Entay hibri eyu ezi? Semayawi. | Minkä värinen tämä on? Sininen. | H1-6
-Entay hibri eyu ezi? Qetelya. | Minkä värinen tämä on? Vihreä. | H1-6
-Entay hibri eyu ezi? B'cha. | Minkä värinen tämä on? Keltainen. | H1-6
-Entay hibri eyu ezi? Bunawi. | Minkä värinen tämä on? Ruskea. | H1-6
-Entay hibri eyu ezi? Aranshoni. | Minkä värinen tämä on? Oranssi. | H1-6
-Kalsey, abey alo? | Missä sukkani on? | H1-6
-Gofley, abey alo? | Missä villapaitani on? | H1-6
-A'sa tium eyu. | Kala on hyvää. | H1-6
-Derho tium eyu. | Kana on hyvää. | H1-6
-Abey alo eti makina? | Missä auto on? | H1-6
-Abey alo eti awtoboos? | Missä bussi on? | H1-6
-Abey alo eti bshkleta? | Missä polkupyörä on? | H1-6
-Abey alo eti babur? | Missä juna on? | H1-6
+Farketa habini. | Anna minulle haarukka. | H2
+Kubaya habini. | Anna minulle kuppi. | H2
+Kara habini. | Anna minulle veitsi. | H2
+Mai habini. | Anna minulle vesi. | H2
+Boon habini. | Anna minulle kahvi. | H2
+Sha'hee habini. | Anna minulle tee. | H2
+Bani habini. | Anna minulle leipä. | H2
+Tseba habini. | Anna minulle maito. | H2
+Gofley habini. | Anna minulle villapaitani. | H5
+Kalsey habini. | Anna minulle sukkani. | H5
+Abey alo eti manka? | Missä lusikka on? | H2
+Abey alo eti farketa? | Missä haarukka on? | H2
+Abey alo eti kubaya? | Missä kuppi on? | H2
+Abey alo eti berad? | Missä teekannu on? | H2
+Abey alo eti dsti? | Missä kattila on? | H2
+Abey alo eti badela? | Missä paistinpannu on? | H2
+Abey alo eti mesob? | Missä injera-kori on? | H2
+Kubaya tesebiru. | Kuppi on rikki. | H2
+Berad tesebiru. | Teekannu on rikki. | H2
+Manka tesebiru. | Lusikka on rikki. | H2
+Dsti tesebiru. | Kattila on rikki. | H2
+Mesob tesebiru. | Injera-kori on rikki. | H2
+Hadish manka gezie. | Ostin uuden lusikan. | H2
+Hadish kubaya gezie. | Ostin uuden kupin. | H2
+Hadish dsti gezie. | Ostin uuden kattilan. | H2
+Hadish berad gezie. | Ostin uuden teekannun. | H2
+Hadish kara gezie. | Ostin uuden veitsen. | H2
+Lomi Se-nuy eyu. | Tänään on maanantai. | H3
+Lomi Se-lus eyu. | Tänään on tiistai. | H3
+Lomi Reb-o'h eyu. | Tänään on keskiviikko. | H3
+Lomi Ah'rbee eyu. | Tänään on perjantai. | H3
+Lomi Qe'dam eyu. | Tänään on lauantai. | H3
+Lomi Sen-bet eyu. | Tänään on sunnuntai. | H3
+Ts'ba'h Se-nuy eyu. | Huomenna on maanantai. | H3
+Ts'ba'h Reb-o'h eyu. | Huomenna on keskiviikko. | H3
+Ts'ba'h Ha'moos eyu. | Huomenna on torstai. | H3
+Ts'ba'h Sen-bet eyu. | Huomenna on sunnuntai. | H3
+Werhi T'ri. | Kuukausi on tammikuu. | H3
+Werhi Mega-beet. | Kuukausi on maaliskuu. | H3
+Werhi Seh-ne. | Kuukausi on kesäkuu. | H3
+Werhi Nehase. | Kuukausi on elokuu. | H3
+Werhi Mes-ke-rem. | Kuukausi on syyskuu. | H3
+Werhi H'dar. | Kuukausi on marraskuu. | H3
+Werhi Tah'sas. | Kuukausi on joulukuu. | H3
+Seat Kil-te koynu. | Kello on kaksi. | H1
+Seat Seleste koynu. | Kello on kolme. | H1
+Seat Arbate koynu. | Kello on neljä. | H1
+Seat Hamushte koynu. | Kello on viisi. | H1
+Seat Shudushte koynu. | Kello on kuusi. | H1
+Seat Aserte koynu. | Kello on kymmenen. | H1
+Ab Helsinki y-nebir. | Asun paikassa Helsinki. | H2
+Ab Espoo y-nebir. | Asun paikassa Espoo. | H2
+Ab Asmara y-nebir. | Asun paikassa Asmara. | H2
+Ab Geza y-nebir. | Asun paikassa kotona. | H1
+Simon y-behal. | Nimeni on Simon. | H1
+Biniam y-behal. | Nimeni on Biniam. | H2
+Samuel y-behal. | Nimeni on Samuel. | H2
+Adey Maria t-behal. | Äitini nimi on Maria. | H1
+Adey Selam t-behal. | Äitini nimi on Selam. | H1
+Adey ab geza ala. | Äitini on kotona. | H1
+Aboy ab geza alo. | Isäni on kotona. | H1
+Hawey ab geza alo. | Veljeni on kotona. | H1
+Haftey ab geza ala. | Siskoni on kotona. | H1
+Adey ab kishine ala. | Äitini on keittiössä. | H1
+Aboy ab kishine alo. | Isäni on keittiössä. | H1
+Ab Asmera abye. | Kasvoin paikassa Asmara. | H4
+Ab Keren abye. | Kasvoin paikassa Keren. | H4
+Ab Helsinki abye. | Kasvoin paikassa Helsinki. | H2
+Aboy Daniel yibehal. | Isäni nimi on Daniel. | H1
+Aboy Biniam yibehal. | Isäni nimi on Biniam. | H1
+Entay hibri eyu ezi? Tsaeda. | Minkä värinen tämä on? Valkoinen. | H4
+Entay hibri eyu ezi? Tselim. | Minkä värinen tämä on? Musta. | H4
+Entay hibri eyu ezi? Qeyih. | Minkä värinen tämä on? Punainen. | H4
+Entay hibri eyu ezi? Semayawi. | Minkä värinen tämä on? Sininen. | H4
+Entay hibri eyu ezi? Qetelya. | Minkä värinen tämä on? Vihreä. | H4
+Entay hibri eyu ezi? B'cha. | Minkä värinen tämä on? Keltainen. | H4
+Entay hibri eyu ezi? Bunawi. | Minkä värinen tämä on? Ruskea. | H4
+Entay hibri eyu ezi? Aranshoni. | Minkä värinen tämä on? Oranssi. | H4
+Kalsey, abey alo? | Missä sukkani on? | H5
+Gofley, abey alo? | Missä villapaitani on? | H5
+A'sa tium eyu. | Kala on hyvää. | H5
+Derho tium eyu. | Kana on hyvää. | H2
+Abey alo eti makina? | Missä auto on? | H6
+Abey alo eti awtoboos? | Missä bussi on? | H6
+Abey alo eti bshkleta? | Missä polkupyörä on? | H6
+Abey alo eti babur? | Missä juna on? | H6
+
+Men iki / ika? | Kuka sinä olet? | H7
+Men shimki / shimka? | Mikä sinun nimesi on? | H7
+Men shima adeki / adeka? | Mikä äitisi nimi on? | H7
+Men dewilu / dewila? | Kuka soitti? | H7
+Men geyruwo ezi? | Kuka teki tämän? | H7
+Entay iyu qursi? | Mitä on aamiaiseksi? | H7
+Drar entay iyu? | Mitä on illalliseksi? | H7
+Misaḥ entay beliki / belika? | Mitä söit lounaaksi? | H7
+Entay koynki / koynka? | Mikä hätänä? | H7
+Entay deliki / delika? | Mitä haluat? | H7
+Meas iki / ika timetsi? | Milloin tulet? | H7
+Meas beli'ki / beli'ka? | Milloin söit? | H7
+Meas dekiski / dekiska? | Milloin menit nukkumaan? | H7
+Meas iyu qursi? | Milloin on aamiainen? | H7
+Meas iyu melidi-ki / melidi-ka? | Milloin on syntymäpäiväsi? | H7
+Abey aloki / aloka? | Missä olet? | H7
+Abey tinebri / tinebir? | Missä asut? | H7
+Abey iyu bet timhirtiki / timhirtika? | Missä koulusi on? | H7
+Abey alo aboki / aboka? | Missä isäsi on? | H7
+Abey alo mayey? | Missä minun vetini on? | H7
+Nimintay ezi gerkiyo / gerkayo? | Miksi teit tämän? | H7
+Nimintay kemzi ilki / ilka? | Miksi sanoit noin? | H7
+Nimintay de'a dekiski / dekiska? | Miksi menit nukkumaan? | H7
+Kemey aloki / aloka? | Mitä kuuluu? | H7
+Haftiki / haftika kemey ala? | Mitä siskollesi kuuluu? | H7
+Siraḥ kemey alo? | Miten työ sujuu? | H7
+Timhirti kemey alo? | Miten koulu sujuu? | H7
+Sidra kemey alewu? | Mitä perheellesi kuuluu? | H7
+Kemey hadirki / hadirka? | Hyvää huomenta! | H7
+Kemey wi'ilki / wi'ilka? | Millainen päiväsi oli? | H7
+Kemey amsiki / amsika? | Hyvää iltaa! | H7
+Kindey ametki / ametka? | Minkä ikäinen olet? | H7
+Kindey me'alti alewa ab semun? | Montako päivää viikossa on? | H7
+Kindey enqoqho gerki / gerka? | Montako munaa käytit? | H7
 
 #READING Esittely
 Selam. Simon y-behal. Ab Helsinki y-nebir. Adey Maria t-behal. Aboy Daniel y-behal. Klite ah'wat aloni.
@@ -949,337 +1054,337 @@ Jalba, Merkeb, Wedeb, Bahri, Deset.
 Me'ärfo neferti, Xrgya, Binto, Hinsa, Gobo.
 ? Mitkä paikat kuulit? | Lentokenttä, tie, silta, rakennus, vuori.
 
-#CONVERSATION Tapaaminen
+#CONVERSATION Tapaaminen | C4
 A: Selam. Kemey aleka? | Hei. Mitä kuuluu?
 B: Ale-ku. Yekenqeley. Men shimka? | Hyvää, kiitos. Mikä sinun nimesi on?
 A: Simon y-behal. | Nimeni on Simon.
 B: Tisbuck leila. | Hauska tavata.
 
-#CONVERSATION Kello
+#CONVERSATION Kello | H3
 A: Seat k'ndey koynu? | Mitä kello on?
 B: Seat hade koynu. | Kello on yksi.
 
-#CONVERSATION Päivä
+#CONVERSATION Päivä | H3
 A: Entay me'alti eyu lomi? | Mikä päivä on tänään?
 B: Lomi hamus eyu. | Tänään on torstai.
 
-#CONVERSATION Kuukausi
+#CONVERSATION Kuukausi | H3
 A: Entay werhi ena zelena? | Missä kuussa olemme?
 B: Werhi tkimti. | Lokakuu.
 
-#CONVERSATION Syntymäpäivä
+#CONVERSATION Syntymäpäivä | H3
 A: Ayenay werhi eyu ametka? | Mikä kuukausi on syntymäpäiväsi?
 B: Werhi gunbet. | Toukokuu.
 
-#CONVERSATION Keittiössä
+#CONVERSATION Keittiössä | H2
 A: Abey alo eti byati? | Missä lautanen on?
 B: Byati tesebiru. | Lautanen on rikki.
 A: Hadish byati gezie. | Ostin uuden lautasen.
 
-#CONVERSATION Ruoka
+#CONVERSATION Ruoka | H2
 A: Entai alo zibelah? | Mitä on syötäväksi?
 B: Shuro. Injera. | Shuroa. Injeraa.
 A: Kemey zerihu? | Miltä se maistuu?
 B: Tu'um. | Herkullista.
 
-#CONVERSATION Toisto
+#CONVERSATION Toisto | H3
 A: Seat k'ndey eki timetsi'e? | Mihin aikaan tulet?
 B: Entai ilka? | Mitä sanoit?
 A: Tigemen. | Toista.
 
-#CONVERSATION Vointi
+#CONVERSATION Vointi | H4
 A: Dehan diki? | Oletko kunnossa?
 B: Kebdey hamime. | Vatsaani sattuu.
 
-#CONVERSATION Väri
+#CONVERSATION Väri | H4
 A: Entay hibri eyu ezi? | Minkä värinen tämä on?
 B: Tsaeda. | Valkoinen.
 
-#CONVERSATION Viikonloppu
+#CONVERSATION Viikonloppu | C4
 A: E'ze qedame senbet entay kitgebri eki? | Mitä teet tänä viikonloppuna?
 B: Sdray krieyom k'keyed eye. | Menen vierailemaan perheeni luona.
 
-#CONVERSATION Työ
+#CONVERSATION Työ | C4
 A: Abey tiserhi? | Missä työskentelet?
 B: Ab bet timihirti yserih. | Työskentelen koulussa.
 
-#CONVERSATION Aamutervehdys
+#CONVERSATION Aamutervehdys | C4
 A: Kemay hadirka? | Hyvää huomenta! (miehelle)
 B: Dehan. | Hyvää (kunnossa).
 
-#CONVERSATION Iltatervehdys
+#CONVERSATION Iltatervehdys | C4
 A: Kemay amsika? | Hyvää iltaa! (miehelle)
 B: Dehan. | Hyvää (kunnossa).
 
-#CONVERSATION Nimi ja kiitos
+#CONVERSATION Nimi ja kiitos | C4
 A: Men shimka? | Mikä sinun nimesi on?
 B: Samuel y-behal. Tisbuck leila. | Nimeni on Samuel. Hauska tavata.
 A: Yekenyeley. | Kiitos!
 
-#CONVERSATION Asuinpaikka
+#CONVERSATION Asuinpaikka | H2
 A: Abey tinebir? | Missä asut?
 B: Ab Espoo ynebir. | Asun Espoossa.
 
-#CONVERSATION Vanhemmat
+#CONVERSATION Vanhemmat | C4
 A: Adeka men tibehal? | Mikä äitisi nimi on?
 B: Adey Maria tibehal. | Äitini nimi on Maria.
 A: Aboka men yibehal? | Mikä isäsi nimi on?
 B: Aboy Daniel yibehal. | Isäni nimi on Daniel.
 
-#CONVERSATION Kenen poika
+#CONVERSATION Kenen poika | H1
 A: Wedi men eka? | Kenen poika olet?
 B: Wedi Daniel eye. | Olen Danielin poika.
 
-#CONVERSATION Sisarukset
+#CONVERSATION Sisarukset | C4
 A: Kidney ahwat alowuka? | Montako sisarusta sinulla on?
 B: Kil-te ahwat alowni! | Minulla on kaksi sisarusta!
 
-#CONVERSATION Kasvupaikka
+#CONVERSATION Kasvupaikka | H4
 A: Abey abika? | Missä kasvoit?
 B: Ab Asmera abye. | Kasvoin Asmarassa.
 
-#CONVERSATION Viikonloppu: matka
+#CONVERSATION Viikonloppu: matka | C4
 A: E'ze qedame senbet entay kitgebri eki? | Mitä teet tänä viikonloppuna?
 B: Kgeyish eye. | Matkustan.
 
-#CONVERSATION Viikonloppu: kirkko
+#CONVERSATION Viikonloppu: kirkko | C4
 A: E'ze qedame senbet entay kitgebri eki? | Mitä teet tänä viikonloppuna?
 B: Betekristian k'keyd eye. | Menen kirkkoon.
 
-#CONVERSATION Viikonloppu: lepo
+#CONVERSATION Viikonloppu: lepo | C4
 A: E'ze qedame senbet entay kitgebri eki? | Mitä teet tänä viikonloppuna?
 B: Ke'erif eye. | Aion levätä.
 
-#CONVERSATION Näkö
+#CONVERSATION Näkö | H4
 A: Dehan diki? | Oletko kunnossa?
 B: Ayney mray abyuni. | En näe.
 
-#CONVERSATION Kuulo
+#CONVERSATION Kuulo | H4
 A: Dehan diki? | Oletko kunnossa?
 B: Ezney tsemime. | En kuule.
 
-#CONVERSATION Päänsärky
+#CONVERSATION Päänsärky | H4
 A: Dehan diki? | Oletko kunnossa?
 B: Risey hamime. | Päähäni sattuu.
 
-#CONVERSATION Ikä
+#CONVERSATION Ikä | H3
 A: Kindey eyu ametka? | Kuinka vanha olet?
 B: Wedi aserte amet eye. | Olen kymmenen vuotta vanha.
 
-#CONVERSATION Syntymäpäivä 2
+#CONVERSATION Syntymäpäivä 2 | H1
 A: Me-ahs eyu elet ametki? | Milloin syntymäpäiväsi on?
 B: Zteweledkulu elet Gunbet aserte shduste eyu. | Syntymäpäiväni on toukokuun 16. päivä.
 
-#CONVERSATION Syntymäkuukausi: kesäkuu
+#CONVERSATION Syntymäkuukausi: kesäkuu | H3
 A: Ayenay werhi eyu ametka? | Mikä kuukausi on syntymäpäiväsi?
 B: Werhi seh-ne. | Kesäkuu.
 
-#CONVERSATION Veljet
+#CONVERSATION Veljet | C4
 A: Kidney ahwat alowuka? | Montako sisarusta sinulla on?
 B: Klite ah'wat aloni. | Minulla on kaksi veljeä.
 
-#CONVERSATION Missä lusikka
+#CONVERSATION Missä lusikka | H2
 A: Abey alo eti manka? | Missä lusikka on?
 B: Ab kishine alo. | Keittiössä.
 
-#CONVERSATION Missä kuppi
+#CONVERSATION Missä kuppi | H2
 A: Abey alo eti kubaya? | Missä kuppi on?
 B: Kubaya tesebiru. | Kuppi on rikki.
 
-#CONVERSATION Rikki ja uusi
+#CONVERSATION Rikki ja uusi | H2
 A: Kubaya tesebiru. | Kuppi on rikki.
 B: Hadish kubaya gezie. | Ostin uuden kupin.
 
-#CONVERSATION Keittiössä
+#CONVERSATION Keittiössä | H2
 A: Abey alo eti dsti? | Missä kattila on?
 B: Ab kishine alo. | Keittiössä.
 
-#CONVERSATION Maku: tulinen
+#CONVERSATION Maku: tulinen | H2
 A: Kemey zerihu? | Miltä se maistuu?
 B: Merir. | Tulista.
 
-#CONVERSATION Maku: makea
+#CONVERSATION Maku: makea | H2
 A: Kemey zerihu? | Miltä se maistuu?
 B: Muqur. | Makeaa.
 
-#CONVERSATION Kuumaa
+#CONVERSATION Kuumaa | H2
 A: Jeqatsel diu? | Onko se kuumaa?
 B: Woo'uy. | Kuumaa.
 
-#CONVERSATION Aamupala
+#CONVERSATION Aamupala | H2
 A: Entai alo zibelah? | Mitä on syötäväksi?
 B: Bani. Tesmi. Boon. | Leipää, voita, kahvia.
 
-#CONVERSATION Illallinen
+#CONVERSATION Illallinen | H2
 A: Entai alo zibelah? | Mitä on syötäväksi?
 B: Derho. Selatta. Mai. | Kanaa, salaattia, vettä.
 
-#CONVERSATION Hinta
+#CONVERSATION Hinta | H2
 A: Waga kendei iu? | Mitä se maksaa?
 B: Aserte. | Kymmenen.
 A: Entai ilka? | Mitä sanoit?
 B: Aserte. | Kymmenen.
 
-#CONVERSATION Kello 2
+#CONVERSATION Kello 2 | H3
 A: Seat k'ndey koynu? | Mitä kello on?
 B: Seat kil-te koynu. | Kello on kaksi.
 
-#CONVERSATION Kello 3
+#CONVERSATION Kello 3 | H3
 A: Seat k'ndey koynu? | Mitä kello on?
 B: Seat seleste koynu. | Kello on kolme.
 
-#CONVERSATION Kello 7.30
+#CONVERSATION Kello 7.30 | H3
 A: Seat k'ndey koynu? | Mitä kello on?
 B: Seat shewate fikri. | Kello on 7.30.
 
-#CONVERSATION Kello 7.15
+#CONVERSATION Kello 7.15 | H3
 A: Seat k'ndey koynu? | Mitä kello on?
 B: Seat shewate mis ribie. | Kello on 7.15.
 
-#CONVERSATION Tuloaika
+#CONVERSATION Tuloaika | H4
 A: Seat k'ndey eki timetsi'e? | Mihin aikaan tulet?
 B: Seat hamuste k'metise eye. | Tulen kello viisi.
 
-#CONVERSATION Päivä: maanantai
+#CONVERSATION Päivä: maanantai | H3
 A: Entay me'alti eyu lomi? | Mikä päivä on tänään?
 B: Lomi se-nuy eyu. | Tänään on maanantai.
 
-#CONVERSATION Päivä: lauantai
+#CONVERSATION Päivä: lauantai | H3
 A: Entay me'alti eyu lomi? | Mikä päivä on tänään?
 B: Lomi qe'dam eyu. | Tänään on lauantai.
 
-#CONVERSATION Huomenna
+#CONVERSATION Huomenna | H3
 A: Entay me'alti eyu ts'ba'h? | Mikä päivä on huomenna?
 B: Ts'ba'h sen-bet eyu. | Huomenna on sunnuntai.
 
-#CONVERSATION Kuukausi: maaliskuu
+#CONVERSATION Kuukausi: maaliskuu | H3
 A: Entay werhi ena zelena? | Missä kuussa olemme?
 B: Werhi mega-beet. | Maaliskuu.
 
-#CONVERSATION Kuukausi: joulukuu
+#CONVERSATION Kuukausi: joulukuu | H3
 A: Entay werhi ena zelena? | Missä kuussa olemme?
 B: Werhi tah'sas. | Joulukuu.
 
-#CONVERSATION Väri: punainen
+#CONVERSATION Väri: punainen | H4
 A: Entay hibri eyu ezi? | Minkä värinen tämä on?
 B: Qeyih. | Punainen.
 
-#CONVERSATION Väri: sininen
+#CONVERSATION Väri: sininen | H4
 A: Entay hibri eyu ezi? | Minkä värinen tämä on?
 B: Semayawi. | Sininen.
 
-#CONVERSATION Väri: musta
+#CONVERSATION Väri: musta | H4
 A: Entay hibri eyu ezi? | Minkä värinen tämä on?
 B: Tselim. | Musta.
 
-#CONVERSATION Väri: vihreä
+#CONVERSATION Väri: vihreä | H4
 A: Entay hibri eyu ezi? | Minkä värinen tämä on?
 B: Qetelya. | Vihreä.
 
-#CONVERSATION Vatsakipu
+#CONVERSATION Vatsakipu | H4
 A: Dehan dika? | Oletko kunnossa? (miehelle)
 B: Kebdey hamime. | Vatsaani sattuu.
 
-#CONVERSATION Työ: sairaala
+#CONVERSATION Työ: sairaala | C4
 A: Abey tiserhi? | Missä työskentelet?
 B: Ab hikimina yserich. | Työskentelen sairaalassa.
 
-#CONVERSATION Työ: koulu
+#CONVERSATION Työ: koulu | C4
 A: Abey tiserhi? | Missä työskentelet?
 B: Ab bet timihirti yserih. | Työskentelen koulussa.
 
-#CONVERSATION Tutustuminen
+#CONVERSATION Tutustuminen | C4
 A: Selam. Men shimka? | Hei. Mikä sinun nimesi on?
 B: Biniam y-behal. Abey tinebir? | Nimeni on Biniam. Missä asut?
 A: Ab Helsinki ynebir. | Asun Helsingissä.
 B: Tisbuck leila. | Hauska tavata.
 A: Tisbuck leila. | Hauska tavata.
 
-#CONVERSATION Kuulumiset
+#CONVERSATION Kuulumiset | H1
 A: Kemey aleka? | Mitä kuuluu?
 B: Ale-ku. Yekenqeley. | Hyvää, kiitos.
 
-#CONVERSATION Aamu ja päivä
+#CONVERSATION Aamu ja päivä | C4
 A: Kemay hadirka? | Hyvää huomenta!
 B: Dehan. Yekenyeley. | Hyvää. Kiitos!
 A: Entay me'alti eyu lomi? | Mikä päivä on tänään?
 B: Lomi hamus eyu. | Tänään on torstai.
 
-#CONVERSATION Ilta ja kello
+#CONVERSATION Ilta ja kello | C4
 A: Kemay amsika? | Hyvää iltaa!
 B: Dehan. | Hyvää.
 A: Seat k'ndey koynu? | Mitä kello on?
 B: Seat shewate koynu. | Kello on seitsemän.
 
-#CONVERSATION Viikonloppu ja perhe
+#CONVERSATION Viikonloppu ja perhe | C4
 A: E'ze qedame senbet entay kitgebri eki? | Mitä teet tänä viikonloppuna?
 B: Sdray krieyom k'keyed eye. | Menen vierailemaan perheeni luona.
 
-#CONVERSATION Kuulumiset: hyvää
+#CONVERSATION Kuulumiset: hyvää | H5
 A: Kemay aleka? | Mitä kuuluu?
 B: Tsbuck. | Hyvää.
 
-#CONVERSATION Kuulumiset: ihan hyvin
+#CONVERSATION Kuulumiset: ihan hyvin | H5
 A: Kemay aleki? | Mitä kuuluu?
 B: Dehan aleku. | Voin ihan hyvin.
 
-#CONVERSATION Ikävä
+#CONVERSATION Ikävä | H5
 A: Kemay aleka? | Mitä kuuluu?
 B: Tsbuick alena, bzeyka nafikotkum. | Meillä menee hyvin, paitsi että kaipaamme teitä.
 
-#CONVERSATION Kiireinen: työ
+#CONVERSATION Kiireinen: työ | H5
 A: Entay dea tofikum? | Miksi emme ole kuulleet teistä?
 B: Sirah Bertihu. | Työ on ollut kiireistä.
 
-#CONVERSATION Kiireinen: koulu
+#CONVERSATION Kiireinen: koulu | H5
 A: Entay dea tofikum? | Miksi emme ole kuulleet teistä?
 B: Timiriti bertihu. | Koulu on ollut kiireistä.
 
-#CONVERSATION Kiireinen: elämä
+#CONVERSATION Kiireinen: elämä | H5
 A: Entay dea tofikum? | Miksi emme ole kuulleet teistä?
 B: Nabra bertihu. | Elämä on ollut kiireistä.
 
-#CONVERSATION Mitä uutta
+#CONVERSATION Mitä uutta | H5
 A: Entay alo hadish? | Mitä uutta?
 B: Walhanti. | Ei mitään.
 
-#CONVERSATION Perheen vointi: hyvää
+#CONVERSATION Perheen vointi: hyvää | H5
 A: Kemay alowu sidra? | Mitä perheelle kuuluu?
 B: Tsibuck alowu. | Heillä menee hyvin.
 
-#CONVERSATION Perheen vointi: ihan hyvin
+#CONVERSATION Perheen vointi: ihan hyvin | H5
 A: Kemay alowu sidra? | Mitä perheelle kuuluu?
 B: Dehan alowu. | Heillä menee ihan hyvin.
 
-#CONVERSATION Lapset
+#CONVERSATION Lapset | H5
 A: Kemay alowu qualoe? | Mitä lapsille kuuluu?
 B: Tsbuiclk alowu. Gobizom. | Heillä menee hyvin. He kasvavat.
 
-#CONVERSATION Paidan väri
+#CONVERSATION Paidan väri | H5
 A: Kanteraka entay hibri eyu? | Minkä värinen paitasi on?
 B: Qeyih. | Punainen.
 
-#CONVERSATION Paidan väri: sininen
+#CONVERSATION Paidan väri: sininen | H5
 A: Kanteraka entay hibri eyu? | Minkä värinen paitasi on?
 B: Semayawi. | Sininen.
 
-#CONVERSATION Kaunis mekko
+#CONVERSATION Kaunis mekko | H5
 A: Tsbuckti k'dan. | Kaunis mekko.
 B: Yekenyeley. | Kiitos!
 
-#CONVERSATION Kala maistuu
+#CONVERSATION Kala maistuu | H5
 A: Kemey zerihu? | Miltä se maistuu?
 B: A'sa tium eyu. | Kala on hyvää.
 
-#CONVERSATION Tänään
+#CONVERSATION Tänään | C4
 A: Entay k'tgebri eki lomanti? | Mitä teet tänään?
 B: Ke'erif eye. | Aion levätä.
 
-#CONVERSATION Missä auto
+#CONVERSATION Missä auto | H6
 A: Abey alo eti makina? | Missä auto on?
 B: Ab geza alo. | Kotona.
 
-#CONVERSATION Missä bussi
+#CONVERSATION Missä bussi | H6
 A: Abey alo eti awtoboos? | Missä bussi on?
 B: Ab geza alo. | Kotona.
 
